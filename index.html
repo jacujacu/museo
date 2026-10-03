@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Virtual: Historia de Norte América</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botón para menú en móviles -->
+    <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+
+    <!-- Menú Lateral -->
+    <nav class="sidebar" id="sidebar">
+        <h2>Museo Virtual</h2>
+        <ul>
+            <li><a href="#" class="nav-link active" data-target="home">Portada</a></li>
+            
+            <h4>Gallery 1: Foundations of the United States</h4>
+            <li><a href="#" class="nav-link" data-target="room1">Room 1. Early America</a></li>
+            <li><a href="#" class="nav-link" data-target="room2">Room 2. Colonial America</a></li>
+            <li><a href="#" class="nav-link" data-target="room3">Room 3. The Road to Independence</a></li>
+            <li><a href="#" class="nav-link" data-target="room4">Room 4. The American Revolution</a></li>
+            <li><a href="#" class="nav-link" data-target="room5">Room 5. Forming a National Government</a></li>
+            
+            <h4>Gallery 2: Expansion, Conflict, and National Reconstruction</h4>
+            <li><a href="#" class="nav-link" data-target="room6">Room 6. Westward Expansion</a></li>
+            <li><a href="#" class="nav-link" data-target="room7">Room 7. Regional Differences</a></li>
+            <li><a href="#" class="nav-link" data-target="room8">Room 8. The Civil War</a></li>
+            <li><a href="#" class="nav-link" data-target="room9">Room 9. Reconstruction</a></li>
+            
+            <h4>Gallery 3: Industrialization, Reform, and Global Emergence</h4>
+            <li><a href="#" class="nav-link" data-target="room10">Room 10. Industrial Growth</a></li>
+            <li><a href="#" class="nav-link" data-target="room11">Room 11. Immigration and Social Change</a></li>
+            <li><a href="#" class="nav-link" data-target="room12">Room 12. Progressive Era</a></li>
+             <li><a href="#" class="nav-link" data-target="room13">Room 13. America on the World Stage</a></li>
+
+            <h4>Gallery 4: Foundations of the United States</h4>
+            <li><a href="#" class="nav-link" data-target="room14">Room 14. The New Deal and World War II</a></li>
+            <li><a href="#" class="nav-link" data-target="room15">Room 15. The Cold War</a></li>
+            <li><a href="#" class="nav-link" data-target="room16">Room 16. Civil Rights and Cultural Change</a></li>
+            <li><a href="#" class="nav-link" data-target="room17">Room 17. Modern America</a></li>
+
+            <h4>Gallery 5: Foundations of the United States</h4>
+            <li><a href="#" class="nav-link" data-target="room18">Room 18. Historical Research Cener </a></li>
+            <li><a href="#" class="nav-link" data-target="room19">Room 19. Multimedia Studio</a></li>
+            <li><a href="#" class="nav-link" data-target="reflection">Room 20. Reflection Hall</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="content">
+        
+        <!-- Portada -->
+        <section id="home" class="room-section active">
+            <div class="cover">
+                <h1>USA AMERICAN HISTORY MUSEUM</h1>
+                <p>Welcome to the virtual museum. Select a gallery from the menu on the left to begin the tour.</p>
+                <img src="imagenes/portada.png" alt="Portada del Museo" class="cover-img">
+            </div>
+            <div class="nav-buttons">
+                <div></div>
+                <button class="btn-nav" onclick="navigateTo('room1')">Start Tour ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 1 -->
+        <section id="room1" class="room-section">
+            <h2>Early America</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 1 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room1/img 1.jpg" alt="Obra 1" data-question="How do you think an ancient society managed to organize thousands of workers to build a 72-foot mound and trade across a continent without modern machinery or draft animals?">
+                    <div class="item-info">
+                        <h3>Copper and Shell Beads from the Poverty Point Earthworks</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Late Archaic Period (c. 1700–1100 BCE)</li>
+                            <li><strong>What is it?</strong> Exquisitely crafted stone, copper, and shell beads excavated from the monumental concentric earthen ridges of Poverty Point in northeastern Louisiana.</li>
+                            <li><strong>Historical Context:</strong> Poverty Point was home to one of the oldest and most massive prehistoric earthwork complexes in North America, requiring an immense, organized labor force to construct features like the 72-foot-tall Mound A. The discovery of raw copper originating from the Great Lakes and shells from the Gulf Coast reveals that this site was not isolated, but rather functioned as a highly active, continental trade hub.</li>
+                            <li><strong>Why is it important?</strong> These beads physically demonstrate that thousands of years before European contact, North America was already populated by complex, sedentary Indigenous societies capable of advanced engineering and far-reaching commercial diplomacy.</li>
+                        </ul>
+        
+                        <a href="https://www.penn.museum/sites/expedition/monumental-grandeur-of-the-mississippi-valley/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 1 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room1/img 2.jpg" alt="Obra 2" data-question="What does the precise alignment of Chaco's massive Great Houses with the sun and the moon tell us about how the Ancestral Puebloans viewed their place in the universe?">
+                    <div class="item-info">
+                        <h3>Turquoise Pendant from Pueblo Bonito (Chaco Canyon)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Ancestral Puebloan Culture (c. 900–1150 CE)</li>
+                            <li><strong>What is it?</strong> A highly polished turquoise pendant discovered within the ruins of Pueblo Bonito, a multi-story sandstone and timber "Great House" in northwestern New Mexico.</li>
+                            <li><strong>Historical Context:</strong> Chaco Canyon was the center of the Ancestral Puebloan culture, renowned for its massive multi-story Great Houses constructed with highly advanced masonry. This canyon served as a major trade and ceremonial hub, connecting diverse regional peoples who exchanged turquoise, Pacific seashells, and intricately designed pottery. Crucially, the sandstone structures and their radiating road networks were precisely aligned with cardinal, solar, and lunar directions, revealing a profound scientific understanding of astronomy.</li>
+                            <li><strong>Why is it important?</strong>This artifact highlights the extraordinary architectural, scientific, and commercial sophistication of Southwest Indigenous societies centuries before European exploration began.</li>
+                        </ul>
+        
+                        <a href="https://www.youtube.com/watch?v=L1bpx_wyjXs" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 1 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room1/img 3.jpg" alt="Obra 3" data-question="Cahokia was the most populous city in North America at its peak, yet it was in decline before Europeans arrived. What challenges do you think might cause a massive ancient metropolis to slowly disappear?.">
+                    <div class="item-info">
+                        <h3>Mississippian Effigy Vessel (Cahokia Metropolis)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Mississippian Culture (c. 1050–1350 CE)</li>
+                            <li><strong>What is it?</strong> A highly detailed, hand-carved ceramic effigy pot representing a human head, showcasing the sophisticated artistry of the Mississippian culture.</li>
+                            <li><strong>Historical Context:</strong> Located near modern-day St. Louis, Missouri, Cahokia was the largest pre-Columbian urban metropolis north of Mexico, housing an estimated population of 10,000 to 20,000 residents. At its peak, Cahokia featured over 120 earthen mounds and grand public plazas, dominated by Monks Mound, a colossal earthen construction standing 100 feet tall. Cahokia stood at the center of a continental trade network, exchanging goods from the Great Lakes to the Gulf Coast.</li>
+                            <li><strong>Why is it important?</strong> This effigy pot represents the height of pre-Columbian urbanism in the Mississippi Valley, proving that early North American societies built densely populated cities with complex, centralized political systems and robust artistic traditions.</li>
+                        </ul>
+
+                        <a href="https://www.nps.gov/jeff/learn/historyculture/peace-medals.htm" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 1 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room1/img 4.jpg" alt="Obra 4" data-question="How does the existence of a permanent, stone-fortified Spanish city in Florida in 1565 alter your perspective on who the first European settlers of America were?">
+                    <div class="item-info">
+                        <h3>Coquina Stone Block from St. Augustine (Castillo de San Marcos)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Early Spanish Exploration and Settlement (Founded 1565 CE, Castillo stone construction ordered 1672 CE)</li>
+                            <li><strong>What is it?</strong> A preserved block of coquina (a rare sedimentary rock made of shell fragments), used to construct the defensive Castillo de San Marcos fort in Florida.</li>
+                            <li><strong>Historical Context:</strong> Founded in 1565 by Spanish explorer Don Pedro Menéndez de Avilés, St. Augustine was established as a military outpost to secure Spanish trade routes and defend its gold-laden treasure fleets returning to Europe. It is the oldest continuously inhabited European-settled city in the United States, predating the British at Jamestown by more than forty years. Despite being sacked by English privateers like Sir Francis Drake in 1588, the Spanish repeatedly rebuilt the city, eventually ordering the construction of a permanent stone fort in 1672 to secure Spain's imperial claim.</li>
+                            <li><strong>Why is it important?</strong> It marks the early, militarized Spanish presence in North America and challenges the Anglo-centric narrative of American history by showcasing a thriving Spanish-colonial hub established decades before English colonization.</li>
+                        </ul>
+
+                        <a href="https://www.youtube.com/watch?v=ChbASfKlxSQ" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 1 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room1/img 5.jpg" alt="Obra 5" data-question=" If the Virginia Company had not transitioned to tobacco farming and offered land grants after the Starving Time, do you think English colonization in Virginia would have collapsed entirely?">
+                    <div class="item-info">
+                        <h3>Jamestown "Starving Time" Iron Key</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Early English Settlement (c. 1609–1610 CE)</li>
+                            <li><strong>What is it?</strong> An excavated, corroded iron key from the early James Fort archaeological site, representing the physical realities of early English colonization.</li>
+                            <li><strong>Historical Context:</strong> Jamestown, Virginia, was founded on May 14, 1607, as a commercial venture funded by the joint-stock Virginia Company of London. The early colony suffered extreme hardships due to a severe drought, poor leadership, and relentless conflict with the local Powhatan tribes. This culminated in the devastating "Starving Time" winter of 1609–1610, during which food shortages and disease killed two out of every three colonists. The settlement only survived by transitioning to a commercial tobacco monoculture in 1610 and offering 50-acre land grants to recruit new settlers.</li>
+                            <li><strong>Why is it important?</strong> This artifact symbolizes the desperate fragility and high human cost of early English settlements, which ultimately survived only by reshaping their labor forces, land distribution systems, and political institutions.</li>
+                        </ul>
+
+                        <a href="https://thehistoryoftheamericans.com/jamestown-and-the-powhatans-part-7-the-starving-time/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('portada')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room2')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room2 -->
+        <section id="room2" class="room-section">
+            <h2>Colonial America</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 2 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room2/img 1.jpg" alt="Obra 1" data-question="How does a community construct a functioning legal system when they find themselves completely isolated from their home country's laws and authority?">
+                    <div class="item-info">
+                        <h3>Facsimile of the Mayflower Compact</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong>  November 1620 / Early New England Settlement</li>
+                            <li><strong>What is it?</strong> A precise, high-resolution reproduction of the historic covenant signed by male passengers aboard the Mayflower before disembarking in Massachusetts.</li>
+                            <li><strong>Historical Context:</strong> In late 1620, Separatist Pilgrims fleeing intense religious persecution in England arrived on the shores of Cape Cod to establish Plymouth Colony. Since they had landed outside their chartered territory, the colonists drafted this written agreement to bind themselves into a "civil body politic" under a mutually agreed-upon social contract.</li>
+                            <li><strong>Why is it important?</strong> It represents one of the earliest colonial foundations of self-government, popular sovereignty, and the "consent of the governed" in North America, establishing legal precedents that heavily influenced the development of the U.S. Constitution.</li>
+                        </ul>
+
+                        <a href="https://themayflowersociety.org/history/the-mayflower-compact/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 2 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room2/img 2.jpg" alt="Obra 2" data-question="How did a single cash crop like tobacco shift Jamestown from a failing gold-seeking outpost into a booming, land-hungry agricultural empire?">
+                    <div class="item-info">
+                        <h3>Clay Tobacco Pipe Excavated from Jamestown Fort</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1610s–1620s / Early Southern Colonization</li>
+                            <li><strong>What is it?</strong>  A fragile, European-styled white clay smoking pipe recovered from the early archaeological layers of the James Fort site in Virginia.</li>
+                            <li><strong>Historical Context:</strong> Founded on May 14, 1607, as a commercial venture under the Virginia Company of London, Jamestown initially suffered catastrophic loss of life from disease, drought, and Powhatan conflicts—culminating in the horrific "Starving Time" winter of 1609–1610. The settlement only survived because of the introduction of Caribbean tobacco seeds by John Rolfe in 1610, which turned Virginia into a lucrative agrarian monoculture.</li>
+                            <li><strong>Why is it important?</strong> This artifact symbolizes the agricultural savior of English colonization, which directly spurred the "Headright System" of 50-acre land grants, decentralized local self-government, and the rapid expansion of plantation farming that led to the introduction of the first enslaved Africans in 1619.</li>
+                        </ul>
+
+                        <a href="https://www.dhr.virginia.gov/blog-posts/tobacco-pipes-from-17th-century-eyreville-northampton-county-eastern-shore/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 2 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room2/img 3.jpg" alt="Obra 3" data-question="How does this woven diplomatic belt challenge the old historical myth that Native Americans did not have complex legal systems or land boundaries?">
+                    <div class="item-info">
+                        <h3>Wampum Covenant Belt</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 17th Century / Native American Diplomacy</li>
+                            <li><strong>What is it?</strong>  A woven belt constructed from purple and white marine shell beads, utilizing geometric patterns to record a political treaty and diplomatic covenant.</li>
+                            <li><strong>Historical Context:</strong> European colonization forced complex diplomatic negotiations. In Plymouth, Wampanoag leader Massasoit Ousamequin forged a strategic alliance with the Pilgrims in 1620 because his people had been devastated by a massive epidemic (1616–1619) and feared conquest by the Narragansett Nation. In the north, the Haudenosaunee (Iroquois) Confederacy used wampum belts to formalize treaties, trade fur, and maintain a powerful, neutral balance of power between competing European empires for nearly two centuries.</li>
+                            <li><strong>Why is it important?</strong> It physically demonstrates that Native American nations possessed highly sophisticated legal systems, political structures, and international diplomatic protocols long before and during European settlement.</li>
+                        </ul>
+
+                        <a href="https://www.nps.gov/jeff/learn/historyculture/peace-medals.htm" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 2 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room2/img 4.jpg" alt="Obra 4" data-question="If the British mercantile system helped make colonial port cities wealthy, why did it ultimately drive those same wealthy merchants to rebel against England?">
+                    <div class="item-info">
+                        <h3>Colonial Merchant's Trade Ledger</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong>  Late 17th–Mid 18th Century / Mercantilism</li>
+                            <li><strong>What is it?</strong> A leather-bound handwritten ledger belonging to a Boston merchant, listing imported manufactured goods from London and exports of timber and cod.</li>
+                            <li><strong>Historical Context:</strong> Under England's mercantilist system, colonies were treated as economic tools to enrich the mother country. The Navigation Acts forced port cities like Boston, New York, and Philadelphia to utilize restricted shipping routes, while acts like the Iron Act of 1750 directly prohibited colonists from developing domestic manufacturing industries.</li>
+                            <li><strong>Why is it important?</strong> The ledger documents how mercantilism enabled colonial merchants to grow wealthy but simultaneously built deep structural resentment against trade monopolies and "taxation without representation."</li>
+                        </ul>
+
+                        <a href="https://americanhistory.si.edu/explore/exhibitions/american-enterprise/online/merchant-era/merchants-role " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 2 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room2/img 5.jpg" alt="Obra 5" data-question="How did early colonial lawmakers use legal statutes to build an economic system that denied human rights based strictly on heredity?">
+                    <div class="item-info">
+                        <h3>Copy of Virginia's 1662 Inherited Status Law</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> December 1662 / Codification of Chattel Slavery</li>
+                            <li><strong>What is it?</strong>  A preserved print of the legislative act passed by the Virginia House of Burgesses defining the legal status of children born in the colony.</li>
+                            <li><strong>Historical Context:</strong> As Southern plantation agriculture grew, colonies transitioned from European indentured servants to lifelong enslaved labor. In 1662, Virginia codified a crucial law establishing that a child's legal status (free or enslaved) strictly followed the condition of the mother (partus sequitur ventrem), overriding English common law.</li>
+                            <li><strong>Why is it important?</strong> This law legally institutionalized racialized chattel slavery in America, ensuring that enslavement was a permanent, hereditary condition and transforming human beings and their offspring into lifetime property.</li>
+                        <ul>
+
+                        <a href="https://encyclopediavirginia.org/primary-documents/negro-womens-children-to-serve-according-to-the-condition-of-the-mother-1662/ ">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room1')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room3')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room3 -->
+        <section id="room3" class="room-section">
+            <h2>The Road to Independence</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room3/img 1.jpg" alt="Obra 1" data-question="How did a war fought to protect and expand the borders of the British colonies in America ultimately sow the seeds for those same colonies to declare independence?">
+                    <div class="item-info">
+                        <h3>Military Map of the Disputed Ohio River Valley</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1754 / Outbreak of the French and Indian War</li>
+                            <li><strong>What is it?</strong> A highly detailed military cartographic map of the Ohio River Valley, marking the positions of British claims and French fortifications such as Fort Duquesne in western Pennsylvania.</li>
+                            <li><strong>Historical Context:</strong> In 1754, imperial competition between Great Britain and France over control of the fertile Ohio Valley and the Great Lakes boiled over into a small, armed clash over Fort Duquesne. This localized conflict sparked a much larger, global struggle known as the French and Indian War (the North American front of the Seven Years' War). Under William Pitt the Elder, the British Crown poured massive military resources and regular troops into North America, making the continent a primary theater of war for the first time.</li>
+                            <li><strong>Why is it important?</strong> The war ended in 1763 with a total British victory and the Treaty of Paris, which forced France to cede Canada and all lands east of the Mississippi River. However, the conflict left Britain with a massive national debt, prompting Parliament to abandon "salutary neglect" and directly tax the colonies to fund frontier garrisons. This map represents the geographic spark that ultimately dismantled the old British-colonial relationship.</li>
+                        <ul>
+
+                        <a href="https://www.nps.gov/articles/000/american-revolution-in-the-ohio-country.htm" target="_blank" class="btn-video">Watch Video>🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room3/img 2.jpg" alt="Obra 2" data-question="If the colonists were technically paying less tax than citizens living in England, why do you think they risked arrest and economic ruin to protest this particular tax?">
+                    <div class="item-info">
+                        <h3> Proof Sheet of the 1765 Stamp Act Tax Stamp</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1765 / The Stamp Act Crisis</li>
+                            <li><strong>What is it?</strong>  A rare, embossed paper proof sheet showing the official tax stamps that British law required to be affixed to all printed materials in the colonies.</li>
+                            <li><strong>Historical Context:</strong> Passed by the British Parliament in 1765, the Stamp Act imposed a direct tax on virtually all printed paper goods, including legal documents, pamphlets, newspapers, and even playing cards. It marked the very first time that Parliament levied a direct tax on the colonists' internal trade rather than regulating external maritime commerce.</li>
+                            <li><strong>Why is it important?</strong> The Stamp Act provoked widespread outrage and organized protests, leading to the formation of resistance groups like the Sons of Liberty. Because the colonies had no elected representatives in the British Parliament, Americans argued that the tax violated their fundamental "rights as Englishmen." It crystallized the revolutionary rallying cry: "No taxation without representation."</li>
+                        <ul>
+
+                        <a href="https://www.dhr.virginia.gov/blog-posts/tobacco-pipes-from-17th-century-eyreville-northampton-county-eastern-shore/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room3/img 3.jpg" alt="Obra 3" data-question="How does the presence of standing army troops inside a civilian city change the way a population views its own government's legitimacy?">
+                    <div class="item-info">
+                        <h3>W"Sons of Liberty" Broadside Protesting the Quartering Act</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1765–1770 / Military Occupation of Boston</li>
+                            <li><strong>What is it?</strong> A highly inflammatory, hand-printed public broadside posted on a Boston street, warning citizens of the overreach of the Quartering Act.</li>
+                            <li><strong>Historical Context:</strong> In 1765, Parliament passed the Quartering Act, legally requiring colonial governments to provide housing, lodging, and provisions for British regular soldiers stationed in America. As imperial taxes sparked boycotts and unrest, the British government responded by militarily occupying Boston. The forced daily contact between frustrated civilians and armed soldiers created a powder keg. This tension erupted on March 5, 1770, in the Boston Massacre, where British troops fired into an angry crowd, killing five civilians, including Crispus Attucks.</li>
+                            <li><strong>Why is it important?</strong> This broadside illustrates how British economic policies transformed into an overt military occupation. The Quartering Act directly interfered with local colonial assemblies and private properties, convincing many moderate colonists that the British Crown was using armed force to strip them of their liberties</li>
+                        <ul>
+
+                        <a href="https://www.britannica.com/event/Intolerable-Acts" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room3/img 4.jpg" alt="Obra 4" data-question="Why do you think the protestors chose to disguise themselves specifically as Native Americans during this act of rebellion?">
+                    <div class="item-info">
+                        <h3>Salvaged Tea Crate Panel from the Boston Tea Party</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> December 16, 1773 / The Boston Tea Party</li>
+                            <li><strong>What is it?</strong> A preserved, weathered wooden panel from an East India Company tea chest, salvaged from the waters of Boston Harbor.</li>
+                            <li><strong>Historical Context:</strong>  In 1773, a severe financial banking crisis brought the British East India Company to the brink of collapse. To save the company, Parliament passed the Tea Act, granting it a trading monopoly in the colonies and undercutting Dutch-smuggled tea. Colonists recognized this as an attempt to force them to accept Parliament's right to tax them. On the night of December 16, 1773, members of the Sons of Liberty disguised themselves as Mohawks, boarded three tea ships, and dumped thousands of pounds of tea into the harbor.</li>
+                            <li><strong>Why is it important?</strong> This panel represents one of the most famous acts of civil disobedience in global history. It signaled that colonists were willing to destroy valuable corporate property to defend their political rights, pushing both sides past the point of easy reconciliation.</li>
+                        <ul>
+
+                        <a href="https://www.philipsemanorhall.com/blog/the-new-york-tea-party-of-1774" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room3/img 5.jpg" alt="Obra 5" data-question="If the British Parliament had responded to the Boston Tea Party with diplomacy rather than the punitive Intolerable Acts, do you think the colonies would have still united to form a new nation?">
+                    <div class="item-info">
+                        <h3>Official Parliamentary Print of the Coercive (Intolerable) Acts</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Mid-1774 / Imperial Crackdown</li>
+                            <li><strong>What is it?</strong> A printed booklet of the punitive statutes passed by the British Parliament in 1774, known in Britain as the Coercive Acts and in America as the "Intolerable Acts."</li>
+                            <li><strong>Historical Context:</strong> Furious over the destruction of property during the Boston Tea Party, the British government passed these acts to punish Massachusetts. The laws closed Boston Harbor, dismantled the Massachusetts colony's self-government, allowed the military governor general Thomas Gage to quarter troops in private properties, and required trials of crown officials to be held in England.</li>
+                            <li><strong>Why is it important?</strong> Parliament intended these acts to isolate and make an example of Massachusetts, but they had the exact opposite effect. The acts galvanized regional unity, prompting the colonies to coordinate their resistance by convening the First Continental Congress in September 1774 and issuing a unified "Declaration of Rights."</li>
+                        <ul>
+
+                        <a href="https://www.mountvernon.org/george-washington/the-revolutionary-war/the-coercive-acts-of-1774-timeline" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room2')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room4')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room4 -->
+        <section id="room4" class="room-section">
+            <h2>The American Revolution</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 4 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room4/img 1.jpg" alt="Obra 1" data-question="Given that the Declaration proclaimed all men are created equal,how do you think the signers reconciled this noble philosophy with the ongoing reality of chattel slavery?">
+                    <div class="item-info">
+                        <h3>Facsimile of the Mayflower Compact</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 4, 1776 (Parchment engrossed on July 19, 1776; signing began August 2, 1776)</li>
+                            <li><strong>What is it?</strong> A highly accurate facsimile of the original engrossed parchment document adopted by the Second Continental Congress.</li>
+                            <li><strong>Historical Context:</strong> Drafted by Thomas Jefferson of the Committee of Five, the Declaration drew heavily on European Enlightenment philosophy, particularly John Locke's natural rights philosophy (asserting that governments derive legitimacy from the "consent of the governed" and exist to secure "Life, Liberty and the pursuit of Happiness"). John Hancock of Massachusetts was the first and most prominent of the 56 delegates to sign.</li>
+                            <li><strong>Why is it important?</strong> This document formally severed the political ties between the Thirteen Colonies and Great Britain, establishing the foundational democratic principles of American self-government while simultaneously initiating a profound national paradox by coexisting with racialized slavery.</li>
+                        <ul>
+
+                        <a href="https://www.archives.gov/publications/prologue/2016/fall/declaration" target="_blank" class="btn-video">Watch Video>🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 4 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room4/img 2.jpg" alt="Obra 2" data-question="How did Washington's military commission and his ultimate resignation establish a template for the relationship between the U.S. military and civilian government?">
+                    <div class="item-info">
+                        <h3>George Washington's Commander-in-Chief Commission</h3>
+
+                       <ul class="item-details">
+                            <li><strong>Date / Period:</strong> June 15–19, 1775 / Second Continental Congress</li>
+                            <li><strong>What is it?</strong> The official hand-signed commission paper issued by the Second Continental Congress appointing George Washington as commander-in-chief of the newly formed Continental Army.</li>
+                            <li><strong>Historical Context:</strong> Following the early armed clashes in Massachusetts, the Continental Congress voted to incorporate local Patriot militias into a central military force. They selected Washington, a wealthy Virginian, to lead the army. Washington formally took command of the troops in Cambridge on July 3, 1775.</li>
+                            <li><strong>Why is it important?</strong> This document established Washington's supreme military command, which proved vital in maintaining the army's endurance through catastrophic defeats and harsh winters. Crucially, when Washington surrendered this commission to Congress in December 1783, he cemented the enduring American precedent of civilian control over the military.</li>
+                        <ul>
+
+                        <a href="https://www.nps.gov/articles/000/washingtoncommission.htm" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room4/img 3.jpg" alt="Obra 3" data-question="How did standardizing military drill and hygiene at Valley Forge turn a humanitarian crisis into the birthplace of a professional American army?">
+                    <div class="item-info">
+                        <h3>Baron von Steuben's Revolutionary Drill Manual</h3>
+
+                         <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Winter 1777–1778 (Valley Forge) / Published 1779</li>
+                            <li><strong>What is it?</strong> A preserved print of the official drill manual, Regulations for the Order and Discipline of the Troops of the United States, authored by Prussian officer Baron von Steuben.</li>
+                            <li><strong>Historical Context:</strong> During the brutal, disease-ridden winter at Valley Forge, Washington's army suffered from severe lack of supplies, food, and standard training. Baron von Steuben arrived to systematically reorganize the camp, establishing standard military drills, camp sanitation, and uniform tactics.</li>
+                            <li><strong>Why is it important?</strong> Von Steuben's training transformed a disjointed force of ragged volunteers into a disciplined, professional, and unified national army. The effectiveness of this training was instantly demonstrated in conventional battle at Monmouth in June 1778.</li>
+                        <ul>
+
+                        <a href="https://www.youtube.com/watch?v=Bs1A5Q45FgM&t=68s" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room4/img 4.jpg" alt="Obra 4" data-question="Saratoga is considered the turning point of the war because it won the French alliance. Why was foreign naval power so critical for defeating the British Empire?">
+                    <div class="item-info">
+                        <h3>Facsimile of the 1778 Franco-American Defensive Alliance Treaty</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Signed February 6, 1778 / Paris, France</li>
+                            <li><strong>What is it?</strong>  A facsimile of the military alliance treaty negotiated by Benjamin Franklin, Silas Deane, and Roger Sherman with the French crown.</li>
+                            <li><strong>Historical Context:</strong> Following the decisive American victory at the Battle of Saratoga in October 1777—where Horatio Gates and Benedict Arnold forced the surrender of British General John Burgoyne—King Louis XVI was convinced that the United States could defeat Great Britain.</li>
+                            <li><strong>Why is it important?</strong> The treaty formally brought French naval forces, regular troops (under Rochambeau), and critical financial loans into the war. This globalized the conflict, forcing Britain to spread its military resources thin and making the final victory at Yorktown tactically possible.</li>
+                        <ul>
+
+                        <a href="https://americanhistory.si.edu/explore/exhibitions/american-revolution-world-war/online/treaties-of-alliance" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 3 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room4/img 5.jpg" alt="Obra 5" data-question="How did the geographic boundaries established by the 1783 treaty lay the groundwork for rapid westward expansion and future conflicts with Indigenous sovereigns?">
+                    <div class="item-info">
+                        <h3>PM Lord Shelburne's Copy of the 1783 Treaty of Paris</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Signed September 3, 1783 (Ratified by Congress January 14, 1784)</li>
+                            <li><strong>What is it?</strong> An original British printing of the peace treaty negotiated between Great Britain and the American commissioners in Paris.</li>
+                            <li><strong>Historical Context:</strong> Following General Cornwallis's catastrophic surrender at Yorktown in October 1781, Britain lost the political will to continue the expensive global war. Negotiators Benjamin Franklin, John Adams, and John Jay bypassed the French court to deal directly with the new, conciliatory British Prime Minister, Lord Shelburne.</li>
+                            <li><strong>Why is it important?</strong> The treaty officially ended the war, recognized unconditional United States sovereignty, and ceded a massive territory stretching from the southern border of Canada to Spanish Florida and from the Atlantic to the Mississippi River. However, the exclusion of Native American nations from the treaty set up future conflicts over westward land.</li>
+                        <ul>
+
+                        <a href="https://www.archives.gov/milestone-documents/treaty-of-paris" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room3')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room5')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room5 -->
+        <section id="room5" class="room-section">
+            <h2>Forming a New National Government</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 5 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room5/img 1.jpg" alt="Obra 1" data-question="How does the fact that the U.S. Constitution was influenced by a Native American model challenge conventional narratives about the founders  of American democracy?">
+                    <div class="item-info">
+                        <h3>Haudenosaunee "Great Law of Peace" Wampum Belt Facsimile</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Pre-Columbian Era (Confederacy unified c. 1200 CE) / Studied by founders in 1785</li>
+                            <li><strong>What is it?</strong> A precise museum facsimile of a Haudenosaunee (Iroquois) wampum belt, constructed from purple and white marine shell beads to record the Gayanashagowa, or Great Law of Peace.</li>
+                            <li><strong>Historical Context:</strong> The Haudenosaunee Confederacy—comprising the Mohawk, Oneida, Onondaga, Cayuga, and Seneca nations (and later the Tuscarora)—was a highly organized, democratic society. This federal system was studied closely by early American leaders. In 1754, Benjamin Franklin incorporated Haudenosaunee ideas of union into his Albany Plan, and in 1785, Thomas Jefferson, James Madison, and James Monroe visited the Haudenosaunee to study their treaty making and confederation. Congress formally recognized this influence on the U.S. Constitution in a Concurrent Resolution in 1988.</li>
+                            <li><strong>Why is it important?</strong>  It demonstrates that North America's first federal democracy was an Indigenous creation that directly shared political concepts with the framers of the U.S. Constitution.</li>
+                        <ul>
+
+                        <a href="https://www.youtube.com/watch?v=4vHaeuC_Fao" target="_blank" class="btn-video">Watch Video>🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 5 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room5/img 2.jpg" alt="Obra 2" data-question="Anti-Federalists feared a strong executive would turn into a monarch. Looking at the growth of presidential power over the centuries, was their fear justified?">
+                    <div class="item-info">
+                        <h3>Roger Sherman's Pocket Draft of the Great Compromise</h3>
+
+                       <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1787–1788 / The Ratification Crisis</li>
+                            <li><strong>What is it?</strong> A rare, preserved first-edition printing of the collected essays written under the joint pseudonym "Publius."</li>
+                            <li><strong>Historical Context:</strong> The draft Constitution sparked a fierce national debate. Anti-Federalists feared that a strong central government would erode state sovereignty and that the presidency would evolve into a monarchy. In response, Alexander Hamilton, James Madison, and John Jay published 85 essays arguing that a large republic was the best way to control factions and preserve individual liberties.</li>
+                            <li><strong>Why is it important?</strong> This volume represents the ultimate intellectual defense of the U.S. Constitution, shaping the ratification debates and providing the foundational definitions of American federalism.</li>
+                        <ul>
+
+                        <a href="https://www.youtube.com/watch?v=4-qk00lOi6M" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 5 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room5/img 3.jpg" alt="Obra 3" data-question="How did standardizing military drill and hygiene at Valley Forge turn a humanitarian crisis into the birthplace of a professional American army?">
+                    <div class="item-info">
+                        <h3>First Edition Bound Volume of "The Federalist" (Publius)</h3>
+
+                         <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Winter 1777–1778 (Valley Forge) / Published 1779</li>
+                            <li><strong>What is it?</strong> A preserved print of the official drill manual, Regulations for the Order and Discipline of the Troops of the United States, authored by Prussian officer Baron von Steuben.</li>
+                            <li><strong>Historical Context:</strong> During the brutal, disease-ridden winter at Valley Forge, Washington's army suffered from severe lack of supplies, food, and standard training. Baron von Steuben arrived to systematically reorganize the camp, establishing standard military drills, camp sanitation, and uniform tactics.</li>
+                            <li><strong>Why is it important?</strong> Von Steuben's training transformed a disjointed force of ragged volunteers into a disciplined, professional, and unified national army. The effectiveness of this training was instantly demonstrated in conventional battle at Monmouth in June 1778.</li>
+                        <ul>
+
+                        <a href="https://www.youtube.com/watch?v=sFRt7XkQK-U" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 5 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room5/img 4.jpg" alt="Obra 4" data-question="How does a government maintain the balance between defending the rule of law and respecting the right of its citizens to protest economic grievances?">
+                    <div class="item-info">
+                        <h3> George Washington's Whiskey Rebellion Uniform Coat</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> October 1794 / The Washington Presidency</li>
+                            <li><strong>What is it?</strong> The preserved wool military coat worn by President George Washington when he took the field to personally command troops in the western counties.</li>
+                            <li><strong>Historical Context:</strong> Alexander Hamilton’s financial plan imposed a federal excise tax on whiskey, which prompted violent resistance from western farmers. Invoking the precedent of civilian control of the military, Washington personally led a militia of 13,000 troops to enforce the law and suppress the rebellion.</li>
+                            <li><strong>Why is it important?</strong> It proved the strength of the new federal government. Unlike the government's helpless response to Shays' Rebellion under the Articles of Confederation, Washington's actions demonstrated that the national government under the Constitution possessed the power and will to enforce its laws.</li>
+                        <ul>
+
+                        <a href="https://www.si.edu/object/george-washingtons-uniform%3Anmah_434863" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 5 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room5/img 5.jpg" alt="Obra 5" data-question="Under what circumstances, if any, should a democratic government be allowed to restrict free speech or penalize criticism during a national security crisis?">
+                    <div class="item-info">
+                        <h3>Original Printed Pamphlet of the Sedition Act of 1798</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 1798 / The Adams Presidency</li>
+                            <li><strong>What is it?</strong> A government-printed broadside containing the text of the Sedition Act, passed by the Federalist-controlled Congress.</li>
+                            <li><strong>Historical Context:</strong> During the Quasi-War with France, partisan divisions reached a crisis. The Sedition Act criminalized writing or speaking maliciously against the federal government, leading to the arrest of Democratic-Republican editors. This sparked an intense debate over free speech, prompting Jefferson and Madison to anonymously write the Kentucky and Virginia Resolutions, which introduced the radical concept of state "nullification."</li>
+                            <li><strong>Why is it important?</strong> This artifact represents the first major domestic crisis over national security, civil liberties, and free speech under the Constitution, fueling the partisan battle that led to the "Revolution of 1800."</li>
+                        <ul>
+
+                        <a href="https://www.gilderlehrman.org/history-resources/essays/immigrants-and-alien-and-sedition-acts-1798 " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room4')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room6')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 6 -->
+        <section id="room6" class="room-section">
+            <h2>Westward Expansion</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 6 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room6/img 1.jpg" alt="Obra 1" data-question="If the Constitution does not explicitly allow the government to purchase foreign land, was this Real Estate Deal of the Century a triumph of pragmatism or a violation of the Law?.">
+                    <div class="item-info">
+                        <h3>The Louisiana Purchase Treaty</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1803</li>
+                            <li><strong>What is it?</strong> A landmark agreement in which the U.S. purchased 828,000 square miles of territory from France for $15 million.</li>
+                            <li><strong>Historical Context:</strong> President Jefferson prioritized the strategic control of the Mississippi River and the port of New Orleans over his own "strict constructionist" constitutional views.</li>
+                            <li><strong>Why is it important?</strong> It effectively doubled the size of the nation, removed a major European threat, and provided the spatial foundation for a continental empire.</li>
+
+                        <a href="https://www.youtube.com/watch?v=TVoFn8w9aHU" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 6 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room6/img 2.jpg" alt="Obra 2" data-question="Question: Columbia brings the light of progress, but what does the painting's depiction of those in the shadows tell us about 19th-century American views of Native peoples?.">
+                    <div class="item-info">
+                        <h3>American Progress (Painting by John Gast)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1872.</li>
+                            <li><strong>What is it?</strong>An allegorical painting depicting a celestial woman leading white settlers west, bringing "light" and technology into the "dark" wilderness.</li>
+                            <li><strong>Historical Context:</strong> This image visualizes the ideology of Manifest Destiny, portraying expansion as a peaceful and divinely sanctioned "tide of civilization".</li>
+                            <li><strong>Why is it important?</strong> It served as a powerful propaganda tool to manufacture public consent for the displacement of Indigenous peoples and the destruction of the environment.</li>
+
+                        <a href="https://www.youtube.com/watch?v=I0s0eEgNJno" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 3 del Room 6 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room6/img 3.jpg" alt="Obra 3" data-question="How did the transition from friendship gifts to sovereignty tokens change the power balance between the U.S. and Indigenous nations?.">
+                    <div class="item-info">
+                        <h3>Thomas Jefferson Peace Medal</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1801 (Distributed 1804–1806).</li>
+                            <li><strong>What is it?</strong> Silver medals given by Lewis and Clark to tribal chiefs to signify allegiance and establish the U.S. President as the "Great White Father".</li>
+                            <li><strong>Historical Context:</strong> Lewis and Clark acted as military officers and diplomatic agents of empire, using these "sovereignty tokens" to establish discovery claims.</li>
+                            <li><strong>Why is it important?</strong> These medals reframed Native Americans as "children" to a new federal authority, laying the rhetorical groundwork for future land dispossession.</li>
+
+                        <a href="https://www.nps.gov/jeff/learn/historyculture/peace-medals.htm" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 6 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room6/img 4.jpeg" alt="Obra 4" data-question="How does this physical evidence of mass migration compare to the empty wilderness myths often used to justify expansion?">
+                    <div class="item-info">
+                        <h3>Deep Ruts of the Oregon Trail</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1841–1869.</li>
+                            <li><strong>What is it?</strong> Permanent physical grooves carved into sandstone by the wheels of hundreds of thousands of westbound wagons.</li>
+                            <li><strong>Historical Context:</strong> The 2,170-mile trek relied on South Pass, a broad, easy gap in the Rockies that allowed wheeled vehicles to cross the Continental Divide.</li>
+                            <li><strong>Why is it important?</strong> They are scars on the landscape representing the "demographic conquest" of the West by nearly 500,000 settlers seeking fertile land.</li>
+
+                        <a href="https://www.youtube.com/watch?v=1bfzaPbrqjc" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 6 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room6/img 5.jpg" alt="Obra 5" data-question="If the government lacked the resources to protect Tribal land as promised, was this treaty designed for peace or for containment?.">
+                    <div class="item-info">
+                        <h3>The Fort Laramie Treaty of 1851 (Horse Creek Treaty)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1851</li>
+                            <li><strong>What is it?</strong> A peace agreement defining tribal boundaries and securing safe passage for overlanders in exchange for government annuities.</li>
+                            <li><strong>Historical Context:</strong> Negotiated with 10,000 Native Americans, the treaty introduced the concept of legally delineated, exclusive land ownership to Plains nations.</li>
+                            <li><strong>Why is it important?</strong> It resulted in cartographic dispossession, systematically reducing tribal territories and making tribes dependent on the government for food and money.</li>
+
+                        <a href="https://americanindian.si.edu/nk360/plains-treaties-fort-laramie/#timeline" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room5')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room7')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 7 -->
+        <section id="room7" class="room-section">
+            <h2>Westward Expansion</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 7 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room7/img 1.jpg" alt="Obra 1" data-question="If cotton production renewed the demand for slavery just as the tobacco market declined, was the Cotton Kingdom an economic necessity or a chosen path?">
+                    <div class="item-info">
+                        <h3>Panoramic Photograph of a Cotton Plantation</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Antebellum Era</li>
+                            <li><strong>What is it?</strong> A wide-angle view of a Southern plantation showing enslaved laborers in a dense field of cotton.</li>
+                            <li><strong>Historical Context:</strong> By 1860, the South supplied 75% of the world’s cotton, and the crop accounted for almost 60% of total American exports.</li>
+                            <li><strong>Why is it important?</strong> Cotton's dominance led to the "King Cotton" ideology, convincing Southerners that their agricultural might was enough to command the respect of the world.</li>
+
+                        <a href="https://www.youtube.com/watch?v=TVoFn8w9aHU" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 7 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room7/img 2.jpg" alt="Obra 2" data-question="How did moving from a home-based artisan workshop to a machine-driven factory schedule alter a worker's sense of time, independence, and daily life?">
+                    <div class="item-info">
+                        <h3>Lowell Textile Mill Illustration and Worker Broadside)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1830s–1850s</li>
+                            <li><strong>What is it?</strong> A print depicting a New England textile mill alongside a broadside detailing factory rules and wage schedules for female and immigrant mill workers.</li>
+                            <li><strong>Historical Context:</strong> As industrialization gained momentum in New England, small artisanal workshops were rapidly replaced by large-scale factories, transforming human labor into a market commodity.</li>
+                            <li><strong>Why is it important?</strong> It illustrates the fundamental shift in the Northern economy away from household production toward mechanized mass manufacturing, creating a distinct urban working class and middle class.</li>
+
+                        <a href="https://www.nps.gov/lowe/learn/historyculture/the-mill-girls-of-lowell.htm" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 7 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room7/img 3.jpg" alt="Obra 7" data-question="How did the transition from friendship gifts to sovereignty tokens change the power balance between the U.S. and Indigenous nations?.">
+                    <div class="item-info">
+                        <h3>Map of the 1820 Missouri Compromise</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1820</li>
+                            <li><strong>What is it?</strong> A map showing the 36°30' line dividing "free" and "slave" territory within the Louisiana Purchase.</li>
+                            <li><strong>Historical Context:</strong> As new states were organized, the status of slavery became a matter of fierce contention in Congress; the 1820 compromise served as a temporary solution.</li>
+                            <li><strong>Why is it important?</strong> It marks the early stages of the "Sectional Crisis," revealing that westward expansion was exposing deep-seated national weaknesses.</li>
+
+                        <a href="https://www.youtube.com/watch?v=FYx-_yNRup8" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 7 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room7/img 4.jpg" alt="Obra 4" data-question="If human beings were treated as the marketable commodity that backed the South's credit system, what was the true cost of regional profit?">
+                    <div class="item-info">
+                        <h3>Slave Sale Broadside with Penciled Prices</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Antebellum Era</li>
+                            <li><strong>What is it?</strong> A promotional flier for a slave auction in South Carolina with prices for men, women, and children noted in the margins.</li>
+                            <li><strong>Historical Context:</strong> In 1860, the average Southern slave owner held almost two-thirds of his wealth in human property.</li>
+                            <li><strong>Why is it important?</strong> It documents the literal commodification of people that supported the Southern social structure and the "planter class" elite.</li>
+
+                        <a href="https://www.youtube.com/watch?v=-6B9mgeIq3s" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 7 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room7/img 5.jpg" alt="Obra 5" data-question="When the nation's leaders resort to violence within the Capitol, is a peaceful Union still possible?">
+                    <div class="item-info">
+                        <h3>"The Caning of Charles Sumner" Political Caricature</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1856</li>
+                            <li><strong>What is it?</strong> A widely circulated caricature depicting Congressman Preston Brooks attacking Senator Charles Sumner with a cane on the Senate floor.</li>
+                            <li><strong>Historical Context:</strong> The attack was retaliation for a speech Sumner gave criticizing slaveholders and the regional culture of the South.</li>
+                            <li><strong>Why is it important?</strong> It signifies the point where regional differences and political polarization moved beyond debate and into outright violence.</li>
+
+                        <a href="https://www.youtube.com/watch?v=VmSuSGde5cw" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room6')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room8')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 8 -->
+        <section id="room8" class="room-section">
+            <h2>The Civil War</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 8 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room8/img 5.jpg" alt="Obra 1" data-question="How does the scale of human loss described in this video help explain the intensity of the issues that divided the nation?">
+                    <div class="item-info">
+                        <h3>The American Civil War in 3 Minutes</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1861–1865.</li>
+                            <li><strong>What is it?</strong> A concise audiovisual summary of the conflict between the Union and the seceded Confederate States.</li>
+                            <li><strong>Historical Context:</strong> The war ignited in April 1861 at Fort Sumter over the controversy of the enslavement of Black people. Eleven Southern states formed the Confederacy, challenging the Union's support for the U.S. Constitution. Over four years, armies fought intense campaigns across multiple theaters. Strategies evolved from early hopes of a short war to a grueling war of attrition that devastated Southern infrastructure. The conflict effectively ended in April 1865 with General Robert E. Lee's surrender at Appomattox Court House.</li>
+                            <li><strong>Why is it important?</strong> It remains the deadliest military conflict in American history, ultimately resulting in the collapse of the Confederacy and the abolition of slavery, which freed four million people.</li>
+
+                        <a href="https://www.youtube.com/watch?v=T3ryzrowNKc" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 8 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room8/img 2.jpg" alt="Obra 2" data-question="Question: After looking the map, why was controlling the Mississippi River considered the key tenet of the entire strategy">
+                    <div class="item-info">
+                        <h3>Map of Secession and the Anaconda Plan</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1861.</li>
+                            <li><strong>What is it?</strong> A strategic military map illustrating General-in-Chief Winfield Scott’s "Anaconda Plan".</li>
+                            <li><strong>Historical Context:</strong> Early in the war, Union leaders realized the need for a long-term strategy to "squeeze" the South. The plan called for a naval blockade of Southern ports and Union control of the Mississippi River to divide the Confederacy and cut off its resources.</li>
+                            <li><strong>Why is it important?</strong>  It set the stage for the Union’s strategy of attrition, aiming to strangle the Confederate economy by preventing the export of cotton and the import of vital goods.</li>
+
+                        <a href="https://www.youtube.com/watch?v=dsTtuVpuGLw" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+              
+                 <!-- Obra 3 del Room 8 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room8/img 4.jpg" alt="Obra 3" data-question="How did the failure of Pickett’s Charge represent the broader collapse of Lee’s offensive strategy?">
+                    <div class="item-info">
+                        <h3>Battle of Gettysburg Painting / Image</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 1–3, 1863.</li>
+                            <li><strong>What is it?</strong> An illustration or painting depicting the intense fighting, specifically "Pickett’s Charge" on the Union center.</li>
+                            <li><strong>Historical Context:</strong> General Robert E. Lee attempted a final northern incursion into Pennsylvania, hoping a decisive win would cause the North to withdraw support for the war. The three-day battle involved over 160,000 soldiers and culminated in a failed Confederate assault.</li>
+                            <li><strong>Why is it important?</strong> It was the "bloodiest battle" of the war with 51,000 casualties and served as the turning point that prevented the Confederacy from achieving victory on Union soil.</li>
+
+                        <a href="https://www.youtube.com/watch?v=N7Xus3m3B50&t=50s" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 4 del Room 8 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room8/img 3.jpg" alt="Obra 4" data-question="Why did Lincoln frame this moral revolution as a war measure rather than just a humanitarian act?">
+                    <div class="item-info">
+                        <h3>The Emancipation Proclamation</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> November 19, 1863.</li> 
+                            <li><strong>What is it?</strong> An executive order issued by President Lincoln declaring that all persons held as slaves within rebelling states "shall be then, thenceforward, and forever free".</li>
+                            <li><strong>Historical Context:</strong> Initially, ending slavery was not a key Union objective, but by mid-1862, Lincoln saw it as a necessary "war measure" to weaken the Confederacy. He waited for a Union victory at Antietam to issue the proclamation from a position of strength.</li>
+                            <li><strong>Why is it important?</strong> While it freed few slaves immediately, it was the "death knell" for slavery, ensuring the institution would not survive a Union victory and allowing Black men to enlist in the Union forces.</li>
+
+                        <a href="https://www.youtube.com/watch?v=bC4kQ2-kHZE" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 8 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room8/img 1.jpg" alt="Obra 5" data-question="Why was federal supervision of labor contracts considered a key tenet of the transition to free labor?">
+                    <div class="item-info">
+                        <h3>Abraham Lincoln’s Gettysburg Address</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> November 19, 1863.</li> 
+                            <li><strong>What is it?</strong> A brief speech delivered by President Abraham Lincoln at the dedication of the Soldiers' National Cemetery.</li> 
+                            <li><strong>Historical Context:</strong> Following the massive Union victory at Gettysburg, Lincoln sought to honor the fallen and redefine the war's purpose beyond mere preservation of territory. He framed the conflict as a test of whether a nation dedicated to the proposition that "all men are created equal" could survive.</li> 
+                            <li><strong>Why is it important?</strong> It transformed the war's meaning, promising that the sacrifice of soldiers would lead to a "new birth of freedom" and ensure that democratic government would not "perish from the earth".</li> 
+
+                        <a href="https://www.youtube.com/watch?v=bC4kQ2-kHZE" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room7')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room9')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 9 -->
+        <section id="room9" class="room-section">
+            <h2>Reconstruction (1865–1877)</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 9 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room9/img 1.avif" alt="Obra 1" data-question="How did these amendments attempt to change the fundamental definition of an American citizen?">
+                    <div class="item-info">
+                        <h3>The Reconstruction Amendments (13th, 14th, and 15th)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1865–1870.</li>
+                            <li><strong>What is it?</strong> Three constitutional amendments passed in the five years immediately following the Civil War.</li>
+                            <li><strong>Historical Context:</strong> These were designed to restructure the U.S. from a nation "half slave and half free" to one where the "blessings of liberty" extended to former slaves. The 13th abolished slavery, the 14th provided a broad definition of national citizenship and equal protection, and the 15th granted voting rights regardless of race.</li>
+                            <li><strong>Why is it important?</strong> They gave the national government more power over the states to protect individual rights.</li>
+
+                        <a href="https://billofrightsinstitute.org/essays/the-end-of-slavery-and-the-reconstruction-amendments/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 9 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room9/img 2.jpg" alt="Obra 2" data-question="Why was federal supervision of labor contracts considered a key tenet of the transition to free labor?">
+                    <div class="item-info">
+                        <h3>The Freedmen’s Bureau School / Officers (1865)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Established March 3, 1865.</li>
+                            <li><strong>What is it?</strong> Records and artifacts from the Bureau of Refugees, Freedmen, and Abandoned Lands.</li>
+                            <li><strong>Historical Context:</strong> This federal agency assisted former slaves in their transition to freedom by issuing food, operating hospitals, and establishing schools. Officers also helped legalize marriages entered into during slavery and supervised labor contracts.</li>
+                            <li><strong>Why is it important?</strong> It represented the first major federal effort to provide social welfare and documented the early experiences of the Black community in freedom.</li>
+
+                        <a href="https://study.com/academy/lesson/video/the-freedmens-bureaus-impact-on-education.html">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 9 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room9/img 3.jpg" alt="Obra 3" data-question="What does the careers of these men suggest about the initial goals of the Reconstruction era?">
+                    <div class="item-info">
+                        <h3>First Black Members of U.S. Congress (1870s)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1870–1877.</li>
+                            <li><strong>What is it?</strong> Biographical profiles of the seven trailblazing Black men who first served in Congress, including Senator Hiram R. Revels and Representative Joseph H. Rainey.</li>
+                            <li><strong>Historical Context:</strong> These leaders emerged during a "brief window of opportunity" where African Americans gained political representation. They advocated for reconciliation, civil rights legislation, and educational opportunities.</li>
+                            <li><strong>Why is it important?</strong> Their presence symbolized the federal government’s initial commitment to racial equality and the aspirations of millions of newly emancipated people.</li>
+
+                            <a href="https://wallbuilders.com/resource/early-black-members-of-the-us-congress/">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 9 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room9/img 4.jpg" alt="Obra 4" data-question="How can an economic system limit freedom as effectively as a legal one?">
+                    <div class="item-info">
+                        <h3>Sharecropping in the Post-Civil War South</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Post-1877.</li>
+                            <li><strong>What is it?</strong> An educational video detailing an economic system where laborers traded work for a share of the harvest.</li>
+                            <li><strong>Historical Context:</strong> Without land of their own, former slaves were often reduced to working for former masters. Falling cotton prices and high interest for tools and seeds meant laborers often fell further into debt each year.</li>
+                            <li><strong>Why is it important?</strong> This structure created "near slavery conditions" that tied families to specific geographical areas and prevented them from purchasing their own land.</li>
+
+                        <a href="hhttps://www.youtube.com/watch?v=KkK08I1K3HY" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 9 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room9/img 5.jpg" alt="Obra 5" data-question="What factors led the federal government to withdraw its support for protecting the rights of freedmen in 1877?">
+                    <div class="item-info">
+                        <h3>Long-Term Consequences & "Jim Crow" Laws</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Late 1870s to the 20th Century.</li>
+                            <li><strong>What is it?</strong> A visual summary of the end of Reconstruction and the subsequent rise of systemic segregation.</li>
+                            <li><strong>Historical Context:</strong> After northern troops left in 1877, progress was curtailed by the rise of "Jim Crow" laws and violence. This led to a nearly century-long absence of Black representatives in many Southern states.</li>
+                            <li><strong>Why is it important?</strong> It explains how the collapse of federal commitment led to the systematic erasure of African American political gains.</li>
+
+                        <a href="https://www.youtube.com/watch?v=HYSE3vNHWfk" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room8')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room10')">Next Room ➡️</button>
+            </div>
+        </section>
+
+
+        <!-- Room 10 -->
+        <section id="room10" class="room-section">
+            <h2>Industrial Growth</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 10 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room10/img 1.jpg" alt="Obra 1" data-question="How did the physical standardization of railroad tracks across the continent mirror the corporate drive to standardize and monopolize the American economy?">
+                    <div class="item-info">
+                        <h3>Transcontinental Railroad Ingot and Section Spike</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> Post-Reconstruction Era (late 19th century)</li>
+                            <li><strong>What is it?</strong> A heavy iron railroad spike and a section of steel rail ingot used during the rapid construction of the transcontinental railroad network.</li>
+                            <li><strong>Historical Context:</strong> The expansion of the railroad was the central physical engine of late nineteenth-century American industrialization. By physically integrating previously isolated regional economies, the railroads established a unified national market. This rapid connectivity accelerated the movement of goods, raw materials, and labor, facilitating the concentration of capital and allowing corporate trusts and monopolies to employ vertical and horizontal integration to control entire sectors of the U.S. economy.</li>
+                            <li><strong>Why is it important?</strong> This artifact represents the physical integration that made sustained national and industrial power possible, illustrating how structural connectivity acts as a prerequisite for capital consolidation.</li>
+
+                        <a href="https://www.up.com/aboutup/community/great-race/golden-spike/ " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 10 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room10/img 2.jpg" alt="Obra 2" data-question="In what ways did instant voice communication accelerate business decisions compared to reliance on postal mail and telegraphs?">
+                    <div class="item-info">
+                        <h3>Alexander Graham Bell’s Centennial Telephone Instrumen</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1876</li>
+                            <li><strong>What is it?</strong> An authentic replica of the electromagnetic voice-transmission instrument patented and publicly exhibited by Alexander Graham Bell in 1876.</li>
+                            <li><strong>Historical Context:</strong> Bell’s telephone revolutionized commercial communication by enabling instant voice contact between corporate offices, industrial plants, buyers, and suppliers. By the 1920s, Theodore Vail’s American Telephone & Telegraph Company (AT&T) expanded this invention into a nationwide communications infrastructure comprising 16 million interconnected telephones, facilitating complex corporate coordination.</li>
+                            <li><strong>Why is it important?</strong> By substituting instant voice dialogue for slower written mail and telegraph dispatches, the telephone allowed corporate executives to coordinate manufacturing plants, branch offices, buyers, and suppliers in real time. By the 1920s, Theodore Vail’s American Telephone & Telegraph Company (AT&T) expanded this invention into a nationwide communications infrastructure comprising 16 million interconnected telephones.</li>
+
+                        <a href="https://collections.museumsvictoria.com.au/articles/15726" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 10 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room10/img 3.jpg" alt="Obra 3" data-question="How did 24-hour indoor electric lighting alter daily human work schedules and give rise to modern nighttime urban culture?">
+                    <div class="item-info">
+                        <h3>Thomas Edison’s Incandescent Lamp and DC Utility Generator</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1879–1880s</li>
+                            <li><strong>What is it?</strong> An early glass incandescent light bulb displayed alongside a model of a central direct-current (DC) power distribution generator engineered by Thomas Edison.</li>
+                            <li><strong>Historical Context:</strong> Edison’s electric lighting and central power system replaced gas illumination and candles, lighting city streets and powering urban homes and commercial buildings.</li>
+                            <li><strong>Why is it important?</strong> n manufacturing, electric power removed factory dependence on natural daylight, allowing plant managers to add overnight shifts and operate industrial machinery around the clock. Bright street lighting and electric streetcars also extended active urban hours, spurring the development of modern night-time commerce and entertainment</li>
+
+                            <a href="https://www.youtube.com/watch?v=Am2164hLdnE" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 10 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room10/img 4.jpg" alt="Obra 4" data-question="Why was technical standardization essential for transforming disconnected local rail lines into an integrated continental market?">
+                    <div class="item-info">
+                        <h3>Pullman Palace Sleeper Car Model & Standard Gauge Rail Track</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1865–1890s</li>
+                            <li><strong>What is it?</strong>A scale model of a luxury Pullman Palace sleeping car mounted on a section of standardized railroad track measuring 4 feet, 8.5 inches in width.</li>
+                            <li><strong>Historical Context:</strong> George Pullman’s sleeping cars made long-distance travel comfortable, while railroad expansion created structured corporate management systems and nationwide transportation channels.</li>
+                            <li><strong>Why is it important?</strong>  Industry-wide conversion to a standard 4' 8.5" track width alongside the implementation of standardized railway time zones in November 1883 enabled competing rail lines to share track and rolling stock without unloading freight or resetting local clocks. This technological standardization integrated isolated regional routes into a seamless, continental market economy.</li>
+
+                        <a href="hhttps://www.youtube.com/watch?v=KkK08I1K3HY" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 10 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room10/img 5.jpg" alt="Obra 5" data-question="What factors led the federal government to withdraw its support for protecting the rights of freedmen in 1877?">
+                    <div class="item-info">
+                        <h3>Standard Oil Trust Share Certificate & Udo Keppler’s "Next!" Cartoon</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1882 / 1904.</li>
+                            <li><strong>What is it?</strong>  An original share certificate from the Standard Oil Trust displayed alongside Udo Keppler’s 1904 political cartoon "Next!", which depicts Standard Oil as a giant octopus wrapping its tentacles around steel, copper, shipping, state houses, and the U.S. Capitol while reaching for the White House.</li>
+                            <li><strong>Historical Context:</strong> John D. Rockefeller combined horizontal integration (buying competing oil refineries) with vertical integration (owning oil wells, pipelines, and retail outlets) to establish Standard Oil and form the nation's first major trust in 1882.</li>
+                            <li><strong>Why is it important?</strong> By securing secret railroad rebates, undercutting rivals, and dominating pipeline distribution, Standard Oil established control over roughly 90% of U.S. oil refining. Keppler's cartoon reflects the public anxiety surrounding Gilded Age corporate monopolies, capturing fears that unregulated trusts wielded disproportionate power that threatened democratic political institutions.</li>
+
+                        <a href="https://www.youtube.com/watch?v=9aKu1VYtxMc" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room9')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room11')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 11 -->
+        <section id="room11" class="room-section">
+            <h2>Immigration and Social Change</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 11 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room11/img 1.jpg" alt="Obra 1" data-question="How did government medical inspections at Ellis Island balance the nation's demand for industrial labor with growing fears of disease and public dependency?">
+                    <div class="item-info">
+                        <h3>U.S. Public Health Service Inspection Card and Line Inspection Chalk</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1910s–1920s (Progressive Era)</li>
+                            <li><strong>What is it?</strong>A chalk stick alongside an authentic immigrant inspection card issued by the United States Public Health Service at the Ellis Island Immigration Station in New York Harbor .</li>
+                            <li><strong>Historical Context:</strong>Between 1892 and 1954, Ellis Island served as the primary entry port for over twelve million European immigrants. As arriving passengers walked up the stairs to the Registry Room, Public Health Service doctors conducted rapid visual "six-second physicals" to detect medical impairments. Inspectors used chalk to write shorthand letters directly onto immigrants' coats—such as H for heart disease, E for eye ailments (trachoma), L for lameness, or X for suspected mental deficiency.</li>
+                            <li><strong>Why is it important?</strong> These chalk marks determined whether an immigrant was cleared for immediate entry or held for detailed medical examination and special inquiry under federal rules excluding those labeled "Likely to Become a Public Charge" (LPC). While Ellis Island was structured for rapid throughput—processing most arrivals within three hours to a single day and rejecting only 1% to 6% of applicants—the chalk inspection symbolized how federal authorities evaluated incoming human labor through strict physical and economic parameters.</li>
+
+                        <a href="https://www.statueofliberty.org/ellis-island/overview-history/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 11 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room11/img 2.jpg" alt="Obra 2" data-question="What do the carved wall poems reveal about the emotional human toll of immigration policies that restricted entry based on national origin and race?">
+                    <div class="item-info">
+                        <h3>Carved Wall Panel from the Angel Island Detention Barracks</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1910–1940</li>
+                            <li><strong>What is it?</strong> A preserved wooden wall plank from the men's detention barracks at the Angel Island Immigration Station in San Francisco Bay, featuring classical Cantonese poetry carved into the wood.</li>
+                            <li><strong>Historical Context:</strong> Opened in 1910 to enforce the Chinese Exclusion Act of 1882—the first federal law barring entry based explicitly on race and class—Angel Island functioned primarily as a secure processing and detention facility for trans-Pacific immigrants.</li>
+                            <li><strong>Why is it important?</strong> Unlike Ellis Island's rapid processing model, Asian arrivals at Angel Island were subjected to prolonged detentions lasting from weeks to six months—and in extreme cases up to twenty-two months—while facing grueling, multi-day interrogations designed to expose "paper sons" holding falsified family records. Public Health Service officers also enforced invasive physical and laboratory screenings for parasites. Rejection rates at Angel Island reached between 18% and 33%. he poems carved into the wooden walls remain a permanent literary testament to the anguish, isolation, and quiet resistance of Chinese detainees.</li>
+
+                        <a href="https://www.youtube.com/watch?v=f_EQY-0ThOM" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 11 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room11/img 3.jpg" alt="Obra 3" data-question="How did flash photography transform investigative journalism and convince lawmakers to intervene in private housing conditions?">
+                    <div class="item-info">
+                        <h3>Jacob Riis’s Magnesium Flash Powder Camera & How the Other Half Lives</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1887–1890 (Gilded Age)</li>
+                            <li><strong>What is it?</strong> An early detective camera equipped with a magnesium flash powder lamp, displayed alongside a first-edition copy of Jacob Riis’s 1890 photojournalistic landmark, How the Other Half Lives.</li>
+                            <li><strong>Historical Context:</strong> By 1890, New York City was the most densely populated city in the United States, with more than 80,000 tenements housing 2.3 million people—nearly 67% of the city’s population. Speculative dumbbell tenements lacked adequate light, air shafts, and indoor plumbing, creating extreme public health crises.</li>
+                            <li><strong>Why is it important?</strong> Danish immigrant and police reporter Jacob Riis used the newly invented magnesium flash powder to illuminate dark, windowless tenement rooms, windowless rear alleys, and nocturnal police lodging houses. His striking photographs and statistical exposures shocked middle- and upper-class readers, popularizing muckraking journalism and proving that urban poverty was rooted in environmental squalor rather than personal moral failing. Riis’s work directly catalyzed housing reform, leading to the New York State Tenement House Act of 1901 ("New Law"), which outlawed windowless rooms, mandated courtyard air shafts, and required private indoor toilets for every two families.</li>
+
+                            <a href="https://readframes.com/food-for-thought-the-problem-with-jacob-riis-by-brian-rose/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 11 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room11/img 4.jpg" alt="Obra 4" data-question="Why were business owners so reliant on child labor, and what arguments did progressive reformers use to prove that child labor damaged the nation's future?">
+                    <div class="item-info">
+                        <h3>Lewis Hine’s Graflex Camera and NCLC Child Labor Photographs</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1908–1916 (Progressive Era)</li>
+                            <li><strong>What is it?</strong> A large glass-plate Graflex camera used by sociologist Lewis Hine, shown with original photographic prints taken for the National Child Labor Committee (NCLC) depicting young newsboys and factory workers.</li>
+                            <li><strong>Historical Context:</strong> Driven by rapid industrial growth and low family wages, the number of working children under fifteen climbed to roughly two million by 1910. Industrialists favored child workers because they performed unskilled labor for lower wages, possessed small hands adept at clearing machine jams, and were unlikely to organize.</li>
+                            <li><strong>Why is it important?</strong>  Hine quit his teaching career in 1908 to work as an investigative photographer for the NCLC. Masquerading as a Bible salesman or machinery inspector to bypass factory guards, Hine took hidden notes and exact measurements of children working 10-to-12-hour shifts in textile mills, coal breakers, glass factories, and street trades. His "photo-interpretations" provided undeniable visual evidence of stunted growth, physical injuries, and illiteracy among child workers. Hine’s work helped pass state compulsory education laws and federal measures like the Keating-Owen Child Labor Act of 1916.</li>
+
+                        <a href="https://www.youtube.com/watch?v=3MmNbhKtD0M" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 11 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room11/img 5.jpg" alt="Obra 5" data-question="Why did it take a horrific workplace catastrophe to convince governments to regulate factory safety and enforce strict labor codes?">
+                    <div class="item-info">
+                        <h3>Scorched Sewing Machine Parts from the Triangle Shirtwaist Factory</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> March 25, 1911 (Progressive Era).</li>
+                            <li><strong>What is it?</strong> Heat-deformed metal sewing machine heads and an iron door lock mechanism recovered from the 9th floor of the Asch Building following the Triangle Shirtwaist Factory fire.</li>
+                            <li><strong>Historical Context:</strong> On Saturday, March 25, 1911, a fire erupted in a fabric scrap bin on the 8th floor of the Triangle Waist Company in Manhattan. The factory employed roughly 500 workers, mostly young Italian and Jewish immigrant women working 52 hours a week for meager wages.</li>
+                            <li><strong>Why is it important?</strong> The disaster claimed 146 lives. rapped by exit doors that management locked to prevent theft and unauthorized breaks, a collapsed iron fire escape, and fire department ladders that reached only to the 6th floor, dozens of seamstresses burned or jumped to their deaths. Public outrage over the owners' acquittal led labor organizations (ILGWU, NWTUL) and Tammany politicians to establish the New York Factory Investigating Commission, co-chaired by Robert F. Wagner and Al Smith with field research by Frances Perkins. The commission's findings produced over 30 state labor laws mandating automatic sprinklers, unlocked exits, fire drills, and factory inspections, serving as the blueprint for federal OSHA standards.</li>
+
+                        <a href="https://www.youtube.com/watch?v=MhmH2IkwfVc&t=17s" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room10')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room12')">Next Room ➡️</button>
+            </div>
+        </section>
+
+                <!-- Room 12 -->
+        <section id="room12" class="room-section">
+            <h2>Progressive Era</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 12 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room12/img 1.jpg" alt="Obra 1" data-question="How did Theodore Roosevelt's distinction between 'good' and 'bad' trusts redefine the relationship between federal executive power and private corporate monopolies?">
+                    <div class="item-info">
+                        <h3>Theodore Roosevelt's "Trust-Busting" Baton & Northern Securities Case Legal Brief</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1902–1904 (Progressive Era)</li>
+                            <li><strong>What is it?</strong> An official courtroom brief from Northern Securities Co. v. United States (1904) displayed alongside a political cartoon depicting President Theodore Roosevelt wielding a "big stick" against corporate monopolies.</li>
+                            <li><strong>Historical Context:</strong>In 1902, President Theodore Roosevelt instructed his Attorney General to file an antitrust lawsuit under the Sherman Antitrust Act against the Northern Securities Company, a massive railroad holding company organized by J.P. Morgan, James J. Hill, and E.H. Harriman that held a virtual monopoly in the Pacific Northwest.</li>
+                            <li><strong>Why is it important?</strong> The Supreme Court’s 1904 ruling ordered the dissolution of Northern Securities, establishing the precedent that mega-corporations were subject to federal authority. This victory launched Roosevelt's "Square Deal" agenda, under which his administration filed over 40 antitrust suits to distinguish between "good" trusts that provided efficient public services and "bad" trusts that abused market power to stifle competition.</li>
+
+                        <a href="https://ehistory.osu.edu/exhibitions/1912/trusts/roosevel" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 12 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room12/img 2.jpg" alt="Obra 2" data-question="Why did consumer outrage over food contamination lead to federal legislation more rapidly than concerns over the harsh working conditions of immigrant laborers?">
+                    <div class="item-info">
+                        <h3>Upton Sinclair’s The Jungle (First Edition) & USDA Meat Inspection Stamp</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1906 (Progressive Era)</li>
+                            <li><strong>What is it?</strong> An original 1906 first-edition printing of Upton Sinclair’s muckraking novel The Jungle, shown alongside a brass federal meat inspection ink stamp used by the U.S. Department of Agriculture.</li>
+                            <li><strong>Historical Context:</strong> Journalist Upton Sinclair wrote The Jungle to expose the hazardous working conditions and economic exploitation endured by immigrant workers in Chicago's stockyards. However, his vivid descriptions of contaminated and unsanitary meat production inadvertently caused a massive public outcry among middle-class consumers.</li>
+                            <li><strong>Why is it important?</strong> Capitalizing on the public outrage generated by Sinclair's exposure, President Roosevelt pressured a reluctant Congress to pass the Pure Food and Drug Act of 1906 and the Meat Inspection Act of 1906. These twin legislative landmarks established the precedent of federal government oversight in consumer protection, food purity, and pharmaceutical safety.</li>
+
+                        <a href="https://www.youtube.com/watch?v=cm1lFZItTqA" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 12 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room12/img 3.jpg" alt="Obra 3" data-question="How did female settlement house workers use social research and community living to pioneer modern social welfare and influence government policy?">
+                    <div class="item-info">
+                        <h3>Jane Addams' Hull House Demographic Survey Map & Settlement Ledger</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1889–1895 (Gilded Age / Early Progressive Era)</li>
+                            <li><strong>What is it?</strong> A color-coded, hand-annotated neighborhood map detailing household nationalities and income levels on Chicago's Near West Side, published by Jane Addams and the residents of Hull House.</li>
+                            <li><strong>Historical Context:</strong> Founded in Chicago in 1889 by Jane Addams and Ellen Gates Starr, Hull House became America's most famous settlement house. College-educated, middle-class women lived directly within working-class immigrant neighborhoods to provide childcare, English literacy classes, public baths, and vocational training.</li>
+                            <li><strong>Why is it important?</strong> Addams and her fellow social workers gathered rigorous statistical data on tenement crowding, disease rates, and child labor abuses. They used this empirical research to successfully lobby municipal and state governments for compulsory education laws, juvenile courts, factory safety codes, and sanitation improvements, establishing the foundations of modern social work and grass-roots Progressive reform.</li>
+
+                            <a href="https://www.neh.gov/article/jane-addams-hero-our-time" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 12 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room12/img 4.jpg" alt="Obra 4" data-question="How did the contrasting tactics of moderate lobbying (NAWSA) and militant civil disobedience (NWP) work together to secure the vote for women?">
+                    <div class="item-info">
+                        <h3>Alice Paul’s National Woman's Party "Silent Sentinel" Picket Banner</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1917–1920 (Progressive Era / WWI))</li>
+                            <li><strong>What is it?</strong> An original purple, white, and gold canvas banner carried by National Woman's Party (NWP) picketers outside the White House, embroidered with the message: "Mr. President, How Long Must Women Wait for Liberty?"</li>
+                            <li><strong>Historical Context:</strong> While Carrie Chapman Catt led the two-million-member National American Woman Suffrage Association (NAWSA) through moderate state-by-state lobbying and patriotic support for WWI, Alice Paul and Lucy Burns founded the NWP to demand an immediate federal constitutional amendment. Starting in January 1917, the NWP organized the "Silent Sentinels"—the first continuous White House pickets in U.S. history.</li>
+                            <li><strong>Why is it important?</strong> When NWP picketers were arrested and imprisoned at the Occoquan Workhouse, their hunger strikes and brutal force-feedings generated immense public sympathy. This militant pressure, combined with NAWSA's diplomatic lobbying, created a dual-pressure system that forced President Woodrow Wilson to endorse woman suffrage, culminating in the ratification of the Nineteenth Amendment in 1920.</li>
+
+                        <a href="https://www.youtube.com/watch?v=nDf8ckLWPt0" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 12 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room12/img 5.jpg" alt="Obra 5" data-question="How did constitutional amendments and banking oversight in 1913 alter the balance of power between everyday citizens, corporate wealth, and the federal government?">
+                    <div class="item-info">
+                        <h3>The 16th and 17th Constitutional Amendment Documents & Federal Reserve Peny</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1913 (Progressive Era)</li>
+                            <li><strong>What is it?</strong> Legislative enrollment copies of the 16th Amendment (Federal Income Tax) and 17th Amendment (Direct Election of Senators), displayed with an engraved fountain pen used during the signing of the Federal Reserve Act of 1913.</li>
+                            <li><strong>Historical Context:</strong> In 1913, during the early presidency of Woodrow Wilson, a surge of long-sought Progressive structural reforms transformed the U.S. Constitution and the national financial system.</li>
+                            <li><strong>Why is it important?</strong> The 16th Amendment authorized a federal income tax, providing a stable revenue stream to fund government regulation, while the 17th Amendment replaced state legislature selection of U.S. Senators with direct popular vote, reducing the power of political machines. Concurrently, the Federal Reserve Act created a central banking system to manage currency, control interest rates, and stabilize financial panics, solidifying the modern federal regulatory framework.</li>
+
+                        <a href="https://www.youtube.com/watch?v=WbslCosMWlI" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room11')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room13')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 13 -->
+        <section id="room13" class="room-section">
+            <h2>America on the World Stage</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 13 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room13/img 1.jpg" alt="Obra 1" data-question="How did the sinking of passenger liners by German U-boats shift American public opinion from strict isolationism to military intervention in World War I?">
+                    <div class="item-info">
+                        <h3>Log Book Page of Submarine U-20 & RMS Lusitania Lifeboat Warning Notice</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> May 7, 1915 / World War I</li>
+                            <li><strong>What is it?</strong> An official log book page from the German submarine U-20, commander Walther Schweiger, displayed alongside an original newspaper warning notice published by the German Embassy in Washington.</li>
+                            <li><strong>Historical Context:</strong> On May 7, 1915, U-20 torpedoed the British passenger liner RMS Lusitania off the Irish coast without warning. The vessel sank in eighteen minutes, killing 1,198 civilians, including 128 American citizens.</li>
+                            <li><strong>Why is it important?</strong> The disaster outraged the American public and forced President Woodrow Wilson to abandon "strict neutrality" in favor of a national "preparedness movement".  Germany temporarily issued the Sussex Pledge to restrict submarine attacks, but its decision to restart unrestricted submarine warfare in January 1917, combined with the intercepted Zimmermann Telegram, ultimately drove the U.S. Congress to declare war on April 6, 1917.</li>
+
+                        <a href="https://www.youtube.com/watch?v=83dA4vxT_3w" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 13 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room13/img 2.jpg" alt="Obra 2" data-question="In what ways did assembly line mass production and affordable automobiles transform everyday American geography, labor, and consumer habits?">
+                    <div class="item-info">
+                        <h3>Henry Ford’s Model T Flywheel & Assembly Line Steering Wheel</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong>  1920s (The Roaring Twenties)</li>
+                            <li><strong>What is it?</strong> A cast-iron flywheel and wooden-rimmed steering wheel from a 1920s Model T Ford, engineered for high-speed assembly line manufacturing .</li>
+                            <li><strong>Historical Context:</strong> Henry Ford revolutionized industrial production by introducing the moving assembly line, where specialized workers turned out a new automobile every 24 seconds. By 1929, roughly 23 to 27 million registered motor vehicles were traveling on American roads—nearly one per household. </li>
+                            <li><strong>Why is it important?</strong>  Mass production of the Model T drove the 1920s economic boom, lowering manufacturing costs and providing factory jobs to unskilled laborers. It stimulated connected industries (steel, glass, rubber) and fostered a nationwide consumer culture powered by cheap credit, household appliances, and radio broadcasting.</li>
+
+                        <a href="https://www.youtube.com/watch?v=rCGQRonkEHs&t=525s" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 13 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room13/img 3.jpg" alt="Obra 3" data-question="How did internal migration and urban Black culture create a worldwide artistic movement while reshaping modern gender roles in 1920s cities?">
+                    <div class="item-info">
+                        <h3>Harlem Jazz Club Saxophone & First-Edition Sheet Music of Louis Armstrong</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1920s (Harlem Renaissance / Jazz Age)</li>
+                            <li><strong>What is it?</strong> A brass tenor saxophone played in a Harlem nightclub, displayed alongside original 1920s sheet music by Louis Armstrong and Duke Ellington.</li>
+                            <li><strong>Historical Context:</strong> Driven by the Great Migration, over a million African Americans relocated from the Jim Crow South to Northern cities like New York. Harlem became the intellectual and artistic capital of Black America, nourishing a cultural flowering known as the Harlem Renaissance .</li>
+                            <li><strong>Why is it important?</strong>  Musicians like Louis Armstrong, Duke Ellington, and Bessie Smith, alongside writers like Langston Hughes and Zora Neale Hurston, created distinct art forms that celebrated Black identity and challenged racial stereotypes. his music defined the "Jazz Age" and accompanied the rise of the "flapper"—young, liberated women who embraced bobbed hair, short skirts, and social independence following the ratification of the 19th Amendment in 1920.</li>
+
+                            <a href="https://www.youtube.com/watch?v=rTLoLjsLih4" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 13 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room13/img 4.jpg" alt="Obra 4" data-question="How did post-war fears of political radicalism and eugenics theories lead Congress to create a discriminatory national origins quota system?">
+                    <div class="item-info">
+                        <h3>National Origins Quota Calculation Ledger & Legislative Pen from the Immigration Act of 1924</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> May 26, 1924 (Post-WWI Nativist Era)</li>
+                            <li><strong>What is it?</strong>  An official U.S. Census Bureau calculation sheet used to establish national origins immigration quotas under the Johnson-Reed Act, displayed with an archival signing pen.</li>
+                            <li><strong>Historical Context:</strong> Post-WWI anti-immigrant sentiment, the 1919–1920 Red Scare, and pseudo-scientific eugenics lobbying led Congress to abandon traditional open-door immigration policies. After passing the temporary Emergency Quota Act in 1921, Congress enacted the permanent Immigration Act of 1924.</li>
+                            <li><strong>Why is it important?</strong> Sponsored by Representative Albert Johnson and Senator David Reed, the 1924 law capped total annual immigration at approximately 164,000–165,000 and calculated country quotas at 2% of each nationality's foreign-born population in the 1890 Census. By using the 1890 census—taken before the large influx of Southern and Eastern European Catholics and Jews—the law allocated 85% of visas to Northern and Western Europe. Furthermore, it barred all "aliens ineligible for citizenship," completely excluding Asian immigrants and ending mass immigration until 1965.</li>
+
+                        <a href="https://history.state.gov/milestones/1921-1936/immigration-act" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 13 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room13/img 5.jpg" alt="Obra 5" data-question="How did the catastrophic economic collapse of the Great Depression redefine the federal government's responsibility for individual citizen welfare?">
+                    <div class="item-info">
+                        <h3>Dorothea Lange's "Migrant Mother" Print & "Hooverville" Metal License Plate</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1929–1936 (The Great Depression)</li>
+                            <li><strong>What is it?</strong> An original silver gelatin photographic print of Florence Owens Thompson ("Migrant Mother") taken by Dorothea Lange, shown with a hand-stamped scrap metal stove plate from a Seattle "Hooverville" shantytown.</li>
+                            <li><strong>Historical Context:</strong> Following the October 1929 stock market crash, the U.S. economy collapsed into the Great Depression. Unprecedented monetary contraction and systemic bank failures shrank the national money supply by one-third, shuttering over 10,000 commercial banks and driving unemployment to 25% (13–15 million workers).</li>
+                            <li><strong>Why is it important?</strong> Millions of evicted and jobless Americans were forced into breadlines and cardboard shantytowns called "Hoovervilles" in contempt of President Herbert Hoover. In the Great Plains, severe drought and soil erosion caused the Dust Bowl, forcing displaced farm families ("Okies") to migrate westward to California. This human catastrophe destroyed public faith in unregulated markets, leading to the 1932 election of Franklin D. Roosevelt and the creation of New Deal programs (CCC, WPA, Social Security) that permanently expanded federal economic responsibility.</li>
+
+                        <a href="https://www.youtube.com/watch?v=Ae1n1JQ0wKc" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room12')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room14')">Next Room ➡️</button>
+            </div>
+        </section>
+
+                <!-- Room 14 -->
+        <section id="room14" class="room-section">
+            <h2>The New Deal and World War II</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 14 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room14/img 1.jpg" alt="Obra 1" data-question="How does the visual rhetoric of this poster make a patriotic case for the federal government's direct intervention in the national economy and civilian labor?">
+                    <div class="item-info">
+                        <h3>Civilian Conservation Corps Poster</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1941</li>
+                            <li><strong>What is it?</strong> A color lithograph poster promoting youth environmental work, sourced from the Prints and Photographs Division of the Library of Congress.</li>
+                            <li><strong>Historical Context:</strong> Commissioned during the Great Depression through the Work Projects Administration (WPA), this artwork features a striking illustration of a young man holding a pickaxe, symbolizing the physical reclamation of the American landscape and the nation's idle youth. The program recruited unemployed young men for natural resource conservation projects, paying them thirty dollars per month, twenty-five of which was automatically sent home to their parents to stimulate local economies.</li>
+                            <li><strong>Why is it important?</strong> This artifact analyzes the massive expansion of federal power and state-sponsored employment programs under President Roosevelt’s New Deal, utilizing public art to build national morale and manage labor unrest.</li>
+
+                        <a href="https://www.britannica.com/topic/Civilian-Conservation-Corps " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 14 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room14/img 2.jpg" alt="Obra 2" data-question="How did Truman's decision to bypass Congress and label a full-scale military conflict a police action set a precedent for future executive war powers?">
+
+                    <div class="item-info">
+                        <h3>President Franklin D. Roosevelt's Hand-Amended First Draft of the "Day of Infamy" Speech</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong>  December 7, 1941</li>
+                            <li><strong>What is it?</strong> A cast-iron flywheel and wooden-rimmed steering wheel from a 1920s Model T Ford, engineered for high-speed assembly line manufacturing.</li>
+                            <li><strong>Historical Context:</strong> Dictated to his secretary Grace Tully on the afternoon of December 7, 1941, immediately following the surprise attack on Pearl Harbor, FDR rejected a long list of Japanese grievances in favor of a brief, decisive appeal. Directly on this paper, Roosevelt crossed out "a date which will live in world history" and wrote the word "infamy." He also changed the attack's description from "simultaneously and deliberately" to "suddenly and deliberately" and accepted a pen-and-ink addition from advisor Harry Hopkins invoking the "inevitable triumph—so help us God."</li>
+                            <li><strong>Why is it important?</strong> This draft provides an intimate look at the meticulous crafting of political rhetoric during a supreme national crisis, serving as the political call to arms that instantly unified a deeply divided, isolationist nation onto a total war footing.</li>
+
+                        <a href="https://www.archives.gov/education/lessons/korean-conflict" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 14 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room14/img 3.jpg" alt="Obra 3" data-question="By framing D-Day as a spiritual crusade rather than a military operation, how did FDR seek to prepare the American public for the massive human casualties that would follow?">
+                    <div class="item-info">
+                        <h3>The Gulf of Tonkin Resolution</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> August 10, 1964</li>
+                            <li><strong>What is it?</strong> Law 88-408, passed by Congress and signed by President Lyndon B. Johnson, authorizing the president to take all necessary measures to repel attacks against U.S. forces in Southeast Asia, preserved in NARA's Record Group 11.</li>
+                            <li><strong>Historical Context:</strong> Passed in the wake of reported North Vietnamese attacks against the USS Maddox and USS Turner Joy. Declassified intelligence later revealed that the second reported attack on August 4 was completely non-existent.</li>
+                            <li><strong>Why is it important?</strong> It represents a total legislative surrender of congressional war powers, serving as the legal justification for the massive, rapid escalation of the Vietnam War—a protracted and deeply divisive proxy war—without a formal declaration of war.</li>
+
+                            <a href="https://www.usni.org/magazines/proceedings/2010/august/tonkin-setting-record-straight " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 14 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room14/img 4.jpg" alt="Obra 4" data-question="How does this photograph demonstrate how technological surveillance changed the timeline and nature of diplomatic negotiations during the Cold War?">
+                    <div class="item-info">
+                        <h3>"Aerial Photograph of MRBM Field Launch Site No. 1 in San Cristobal, Cuba</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> October 14, 1962</li>
+                            <li><strong>What is it?</strong> AA high-altitude reconnaissance photograph taken by Navy pilots and U-2 spy planes, preserved in the John F. Kennedy Presidential Library and Museum.</li>
+                            <li><strong>Historical Context:</strong> This photograph caught the Soviet Union constructing medium-range nuclear ballistic missile bases in Cuba, capable of striking major U.S. cities. It triggered the 13-day Cuban Missile Crisis, the closest the world has ever come to full-scale nuclear war, resulting in a naval quarantine and secret diplomatic negotiations.<li>
+                            <li><strong>Why is it important?</strong> It demonstrates the high-stakes role of technological surveillance and intelligence gathering in geopolitical brinkmanship and deterrence, where a single photograph could dictate the survival of millions.</li>
+
+                        <a href="https://history.state.gov/milestones/1921-1936/immigration-act" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 14 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room14/img 5.jpg" alt="Obra 5" data-question="Given that there were no formal charges of disloyalty against these citizens, how does this document expose the limits of constitutional protections during moments of national panic?">
+                    <div class="item-info">
+                        <h3>Executive Order 9066</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> February 19, 1942</li>
+                            <li><strong>What is it?</strong> The official executive order signed by President Franklin D. Roosevelt authorizing military commanders to exclude civilians from designated military areas, housed in the National Archives Milestone Documents.</li>
+                            <li><strong>Historical Context:</strong> Signed in the wake of wartime panic following Pearl Harbor, this order was utilized by Lieutenant General John L. DeWitt to enforce curfews and authorize the forced removal and incarceration of approximately 112,000 to 122,000 Japanese Americans—nearly 70,000 of whom were American citizens—on 48-hour notices. Families lost their homes, farms, and businesses and were forced to live in remote, drafty, tar-papered barracks behind barbed wire under armed guard.</li>
+                            <li><strong>Why is it important?</strong> It represents the severe suspension of civil liberties and constitutional protections driven by nativism and wartime hysteria, highlighting the deep structural contradictions of a democracy fighting tyranny abroad while practicing racial exclusion at home.</li>
+
+                        <a href="https://www.historylink.org/File/22995" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room13')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room15')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 15 -->
+        <section id="room15" class="room-section">
+            <h2>Cold War</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 15 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room15/img 1.jpg" alt="Obra 1" data-question="How did Kennan's framing of Soviet behavior as an instinctive paranoia eliminate the possibility of post-war diplomatic compromise and set the stage for a permanent cold war?">
+                    <div class="item-info">
+                        <h3>George Kennan's "Long Telegram"</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> February 22, 1946</li>
+                            <li><strong>What is it?</strong>  An 8,000-word secret diplomatic dispatch sent by George Kennan, the U.S. Chargé d'Affaires in Moscow, to the Secretary of State, preserved in NARA's Record Group 59.</li>
+                            <li><strong>Historical Context:</strong> Dispatched in the immediate aftermath of WWII, Kennan's secret analysis argued that Soviet foreign policy was driven by an instinctive, paranoid Russian insecurity masked as aggressive Marxist expansionism.</li>
+                            <li><strong>Why is it important?</strong> This document provided the intellectual rationale and foundation for the entire American Cold War doctrine of "containment"—the long-term, vigilant diplomatic, economic, and military containment of Soviet expansionist tendencies.</li>
+
+                        <a href="https://www.trumanlibraryinstitute.org/kennan/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 15 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room15/img 2.jpg" alt="Obra 2" data-question="How do Roosevelt's precise word edits—such as replacing world history with infamy—alter the emotional weight and historical legacy of this speech?">
+
+                    <div class="item-info">
+                        <h3>President Harry S. Truman's Statement on the Situation in Korea</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> June 27, 1950</li>
+                            <li><strong>What is it?</strong> The official White House press release authorizing U.S. air and naval forces to defend South Korea following the North Korean crossing of the 38th parallel, housed in the Truman Library.</li>
+                            <li><strong>Historical Context:</strong> Bypassing a formal declaration of war from Congress, Truman committed American forces under a United Nations mandate, framing the conflict as a "police action" to halt communist aggression. To prevent triggering a direct nuclear war, the statement carefully avoided naming the Soviet Union directly.</li>
+                            <li><strong>Why is it important?</strong> It represents a watershed expansion of executive military authority in the United States and marks the active, military translation of the containment doctrine from theory into global combat.</li>
+
+                        <a href="hhttps://www.archives.gov/education/lessons/korean-conflict" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 15 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room15/img 3.jpg" alt="Obra 3" data-question="How does this resolution illustrate the dangers of utilizing unverified or manipulated intelligence to expand executive military actions during a crisis?">
+                    <div class="item-info">
+                        <h3>The Gulf of Tonkin Resolution</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> August 10, 1964</li>
+                            <li><strong>What is it?</strong> Public Law 88-408, passed by Congress and signed by President Lyndon B. Johnson, authorizing the president to take all necessary measures to repel attacks against U.S. forces in Southeast Asia, preserved in NARA's Record Group 11.</li>
+                            <li><strong>Historical Context:</strong> Passed in the wake of reported North Vietnamese attacks against the USS Maddox and USS Turner Joy. Declassified intelligence later revealed that the second reported attack on August 4 was completely non-existent.</li>
+                            <li><strong>Why is it important?</strong> It represents a total legislative surrender of congressional war powers, serving as the legal justification for the massive, rapid escalation of the Vietnam War—a protracted and deeply divisive proxy war—without a formal declaration of war.</li>
+
+                            <a href="https://www.usni.org/magazines/proceedings/2010/august/tonkin-setting-record-straight" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 15 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room15/img 4.jpg" alt="Obra 4" data-question="How does this photograph demonstrate how technological surveillance changed the timeline and nature of diplomatic negotiations during the Cold War?">
+                    <div class="item-info">
+                        <h3>Aerial Photograph of MRBM Field Launch Site No. 1 in San Cristobal, Cuba</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> October 14, 1962</li>
+                            <li><strong>What is it?</strong>  A high-altitude reconnaissance photograph taken by Navy pilots and U-2 spy planes, preserved in the John F. Kennedy Presidential Library and Museum.</li>
+                            <li><strong>Historical Context:</strong> This photograph caught the Soviet Union constructing medium-range nuclear ballistic missile bases in Cuba, capable of striking major U.S. cities. It triggered the 13-day Cuban Missile Crisis, the closest the world has ever come to full-scale nuclear war, resulting in a naval quarantine and secret diplomatic negotiations.</li>
+                            <li><strong>Why is it important?</strong>  It demonstrates the high-stakes role of technological surveillance and intelligence gathering in geopolitical brinkmanship and deterrence, where a single photograph could dictate the survival of millions.</li>
+
+                        <a href="https://atomicarchive.com/media/photographs/cuba/recon-photo-2.html " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 15 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room15/img 5.jpg" alt="Obra 5" data-question="How does this flight plan illustrate the way geopolitical competition and the drive for national prestige can accelerate scientific and technological development?">
+                    <div class="item-info">
+                        <h3>The Apollo 11 Flight Plan</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 1, 1969</li>
+                            <li><strong>What is it?</strong> The detailed, minute-by-minute operational timeline of the Saturn V rocket, Command Module Columbia, and Lunar Module Eagle, preserved in NARA's NASA Records.</li>
+                            <li><strong>Historical Context:</strong> Following early Soviet triumphs (such as Sputnik), President Kennedy mandated in 1961 that the U.S. land a man on the moon before the decade's end. The plan successfully guided Neil Armstrong and Buzz Aldrin to land on the moon on July 20, 1969.</li>
+                            <li><strong>Why is it important?</strong> This document represents the convergence of scientific innovation and Cold War soft power, proving how technological supremacy was utilized as a key instrument of ideological warfare to secure global prestige.</li>
+
+                        <a href="https://www.smithsonianmag.com/us-history/apollo-11-flight-plan-180957225/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room14')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room16')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 16 -->
+        <section id="room16" class="room-section">
+            <h2>Cold War</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 16 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room16/img 1.jpg" alt="Obra 1" data-question="How can a nation maintain moral authority as a global leader of democracy when its own domestic laws codify systematic inequality and segregation?">
+                    <div class="item-info">
+                        <h3>The Supreme Court Ruling in Brown v. Board of Education</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> May 17, 1954</li>
+                            <li><strong>What is it?</strong> A printed official copy of the landmark U.S. Supreme Court decision declaring racially segregated public schools unconstitutional.</li>
+                            <li><strong>Historical Context:</strong> Following the Reconstruction Era, Jim Crow laws systematically segregated and disenfranchised Black citizens under the "separate but equal" doctrine of Plessy v. Ferguson. During early negotiations for the UN Charter in 1945, the U.S. delegation had introduced language protecting "domestic jurisdiction" specifically to prevent international scrutiny of these segregationist practices. Eleanor Roosevelt even had to reassure southern senators that UN human rights covenants would not interfere with domestic segregation laws. By 1954, however, the Supreme Court officially struck down state-sanctioned educational segregation.</li>
+                            <li><strong>Why is it important?</strong> This ruling was a massive legal victory that shattered the constitutional foundation of segregation. It catalyzed the modern Civil Rights Movement by demonstrating the power of federal judicial intervention and forced the nation to confront the hypocrisy of championing global human rights while denying equality at home.</li>
+
+                        <a href="https://www.britannica.com/event/Brown-v-Board-of-Education-of-Topeka" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 16 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room16/img 2.jpg" alt="Obra 2" data-question="In what ways can a single, quiet act of individual defiance inspire a collective movement capable of restructuring a nation's social norms?">
+
+                    <div class="item-info">
+                        <h3>Montgomery Bus Boycott Mobilization Leaflet</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> December 1955</li>
+                            <li><strong>What is it?</strong> A paper leaflet distributed by local civil rights groups in Montgomery, Alabama, organizing the historic bus boycott.</li>
+                            <li><strong>Historical Context:</strong> Despite legal victories in federal courts, segregation remained heavily enforced in the daily public lives of Black Southerners. In December 1955, Rosa Parks was arrested for refusing to surrender her seat on a segregated Montgomery city bus. Her act of defiance prompted local Black leaders and residents to mobilize, organizing a highly coordinated, year-long economic boycott of the city transit system.</li>
+                            <li><strong>Why is it important?</strong> This leaflet represents the transition of the Civil Rights Movement from a purely legal strategy to highly organized, direct nonviolent public action. The successful boycott demonstrated the immense economic and social leverage of grassroots unity and propelled the leadership of Martin Luther King Jr. onto the national stage.</li>
+
+                        <a href="https://www.thehenryford.org/collections/explore/articles/the-montgomery-bus-boycott-in-the-news" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 16 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room16/img 3.jpg" alt="Obra 3" data-question="Why did the United States require over a decade of intense, violent public confrontations after the Brown ruling to finally pass federal civil rights legislation?">
+                    <div class="item-info">
+                        <h3>Official Signed Document of the Civil Rights Act of 1964</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 2, 1964</li>
+                            <li><strong>What is it?</strong> A copy of the federal legislative document signed into law that legally prohibited discrimination in public accommodations, schools, and employment based on race, color, religion, sex, or national origin.</li>
+                            <li><strong>Historical Context:</strong> Throughout the early 1960s, nonviolent direct action campaigns led by figures like Martin Luther King Jr. forced a direct public confrontation with systemic racism. This struggle was highly visible worldwide; during the Cold War, the Soviet Union actively publicized American racial violence to damage the global reputation of U.S. democracy. Under intense pressure, the federal government enacted the Civil Rights Act of 1964, followed by the Voting Rights Act of 1965.</li>
+                            <li><strong>Why is it important?</strong> These legislative milestones dismantled legal segregation, expanded federal protection over voting and civil rights, and transformed the American social landscape. Furthermore, these achievements served as a powerful template for subsequent social movements, including Second-Wave Feminism and the broader push for gender and LGBTQ+ equality.</li>
+
+                            <a href="https://info.mysticstamp.com/this-day-in-history-july-2-1964_tdih/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 16 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room16/img 4.jpg" alt="Obra 4" data-question="How can democratic societies balance national security operations against the protection of civil liberties and political dissent?">
+                    <div class="item-info">
+                        <h3>J. Edgar Hoover’s FBI COINTELPRO File on Dr. Martin Luther King Jr.</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1964 (1956–1971 COINTELPRO Era)</li>
+                            <li><strong>What is it?</strong> Declassified Federal Bureau of Investigation (FBI) surveillance logs and the anonymous "blackmail package" (or "suicide letter") mailed to Dr. Martin Luther King Jr. under Director J. Edgar Hoover.</li>
+                            <li><strong>Historical Context:</strong> Under the covert counterintelligence program COINTELPRO, the FBI engaged in extensive illegal surveillance—using wiretaps, room bugs, undercover operatives, and disinformation—against political organizations deemed threats to national security. Following King's rising prominence with the Southern Christian Leadership Conference (SCLC), Hoover’s FBI labeled King the "most dangerous" Black leader in America and sought to vilify his public image, criminalize his leadership, and disrupt the nonviolent civil rights movement.</li>
+                            <li><strong>Why is it important?</strong> It provides stark historical evidence of the extent to which federal law enforcement agencies used state power and psychological warfare to sabotage democratic social movements and intimidate civil rights leaders.</li>
+
+                        <a href="hhttps://www.youtube.com/watch?v=7mKshhaS0BY" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 16 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room16/img 5.jpg" alt="Obra 5" data-question="How does analyzing social movements through the lens of Jane Crow change our understanding of the connections between racial civil rights and women's liberation?">
+                    <div class="item-info">
+                        <h3>Pauli Murray’s Written Senate Judiciary Testimony on the Equal Rights Amendment</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> September 1970</li>
+                            <li><strong>What is it?</strong> The official written statement submitted by Black legal scholar, activist, and Episcopal priest Pauli Murray to the U.S. Senate Judiciary Committee regarding the proposed Equal Rights Amendment (ERA).</li>
+                            <li><strong>Historical Context:</strong> Murray coined the term "Jane Crow" to analyze how race and sex discrimination intersected to uniquely oppress African American women—a conjunction of "twin immoralities". As a co-founder of the National Organization for Women (NOW) in 1966 and a pioneer of Fourteenth Amendment gender litigation (which provided the foundation for Ruth Bader Ginsburg's victory in Reed v. Reed), Murray testified before Congress that Black women had the greatest stake in constitutional sex equality.</li>
+                            <li><strong>Why is it important?</strong> Murray’s testimony introduced an ambitious, intersectional framework into the legislative record of the ERA, arguing that civil rights for race and sex were indivisible and essential for true constitutional equality.</li>
+
+                        <a href="https://www.aclu.org/news/womens-rights/pauli-murrays-indelible-mark-on-the-fight-for-equal-rights" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room15')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room17')">Next Room ➡️</button>
+            </div>
+        </section>
+
+        <!-- Room 17 -->
+        <section id="room17" class="room-section">
+            <h2>Modern America</h2>
+            <div class="gallery-grid">
+                
+                <!-- Obra 1 del Room 17 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room17/img 1.jpg" alt="Obra 1" data-question="How do small, accidental human errors and individual split-second decisions at a border gate reshape the destiny of global empires?">
+                    <div class="item-info">
+                        <h3>Fragment of the Berlin Wall (Bornholmer Street Checkpoint)</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> November 9, 1989</li>
+                            <li><strong>What is it?</strong> A rugged concrete fragment salvaged from the Berlin Wall, specifically sourced from the vicinity of the Bornholmer Street border crossing in Berlin.</li>
+                            <li><strong>Historical Context:</strong> The opening of the Berlin Wall was a highly contingent, unplanned event. On the evening of November 9, 1989, sleep-deprived East German spokesman Günter Schabowski mistakenly announced that new, relaxed travel regulations would take effect "immediately, right away". Hearing this broadcast, thousands of East Berliners rushed to checkpoints. At Bornholmer Street, facing an overwhelming crowd and receiving no clear orders from senior officials, border guard Harald Jäger made the personal decision to open the gates, peacefully ending the division of Berlin.</li>
+                            <li><strong>Why is it important?</strong> This fragment is a physical symbol of the collapse of the Soviet bloc and the peaceful end of the Cold War, which ultimately left the United States unchallenged as the world's sole superpower. It represents a "punctuational moment" of dramatic, rapid change that forced American leaders to completely redraw their security strategies and adapt Cold War-era institutions, such as NATO, to a new global landscape.</li>
+
+                        <a href="https://www.youtube.com/watch?v=pedUqFXmEDQ" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                <!-- Obra 2 del Room 17 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room17/img 2.jpg" alt="Obra 2" data-question="Would our modern digital world exist in the same way today if the government had chosen to heavily regulate the internet in its infancy?">
+
+                    <div class="item-info">
+                        <h3>Floppy Disk Containing the "Framework for Global Electronic Commerce"</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> July 1, 1997</li>
+                            <li><strong>What is it?</strong> A vintage 3.5-inch floppy disk containing the original text of the Clinton Administration's landmark policy blueprint for governing the early internet.</li>
+                            <li><strong>Historical Context:</strong> In the mid-1990s, the World Wide Web transitioned from a niche technological tool into a rapidly growing public medium. In 1997, senior White House advisor Ira Magaziner helped draft this policy framework, which declared that the internet should be a market-driven arena with minimal government intervention, establishing "permissionless innovation" as the guiding default for American technology policy.</li>
+                            <li><strong>Why is it important?</strong> This minimalist regulatory paradigm unleashed an unprecedented wave of private investment and high-tech economic growth, establishing American dominance in the digital sphere. By 2022, the digital economy had expanded to account for a staggering 10% of U.S. GDP ($2.6 trillion in value added), underpinning millions of American jobs.</li>
+
+                        <a href="https://www.youtube.com/watch?v=FLJTUvlsVBg" target="_blank" class="btn-video">Watch Video 🎥</a>
+
+                    </div>
+                </article>
+
+                <!-- Obra 3 del Room 17 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room17/img 3.jpg" alt="Obra 3" data-question="At what point does a nation's pursuit of safety begin to destroy the very freedoms it is trying to protect?">
+                    <div class="item-info">
+                        <h3>Signed Legislative Folio of the USA PATRIOT Act</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> October 26, 2001</li>
+                            <li><strong>What is it?</strong> An official government-printed folio of the 132-page USA PATRIOT Act, signed into law in the immediate aftermath of September 11, 2001.</li>
+                            <li><strong>Historical Context:</strong> Six weeks after the catastrophic 9/11 attacks, a traumatized American public demanded increased security. Congress responded almost unanimously by passing this expansive security bill. It sought to detect and prevent further acts of terrorism by removing "the wall" of separation between criminal and foreign intelligence investigations while vastly expanding the surveillance powers of federal agencies.</li>
+                            <li><strong>Why is it important?</strong> hile federal prosecutors praised the Act for allowing them to "connect the dots" to disrupt terrorist networks, privacy groups like the ACLU strongly protested its passage. They argued that provisions like Section 213 (secret "sneak-and-peek" searches) and Section 215 (seizure of library and business records) directly infringed upon the First and Fourth Amendment rights of U.S. citizens. It remains the ultimate modern symbol of the delicate balance between state security and individual liberty.</li>
+
+                            <a href="https://www.sethkaller.com/item/2646-27302.99-Elias-Boudinot,-as-President-of-Congress,-Signed-Privateer's-Commission " target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 4 del Room 17 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room17/img 4.jpg" alt="Obra 4" data-question="How do the changes in your own family's history over the past generations reflect the broader, diverse demographic shifts of the nation?">
+                    <div class="item-info">
+                        <h3>Digital Album of the Contemporary American Family</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 1970 – 2024 (Pew Research Comparative Study)</li>
+                            <li><strong>What is it?</strong> A digital interactive exhibition featuring demographic data, Census records, and photographic portraits documenting the shifting structure of American households over the past 50 years.</li>
+                            <li><strong>Historical Context:</strong> Since the U.S. Bicentennial in 1976, American society has aged significantly, with the median age rising across all demographic groups. Driven by waves of immigration from Latin America and Asia, the nation has become remarkably diverse. On the home front, marriage rates have declined, women have achieved a boom in higher education and labor force participation, and multi-generational living arrangements have risen dramatically.</li>
+                            <li><strong>Why is it important?</strong> These portraits visually anchor the massive social, economic, and cultural transformations of daily American life. They show how the definition of "family" has expanded, how gender roles have been redefined, and how persistent wealth gaps have accompanied these demographic changes.</li>
+
+                        <a href="https://www.today.com/video/celebrating-the-changing-face-of-the-american-family-111119941524" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+                 <!-- Obra 5 del Room 17 -->
+                <article class="gallery-item">
+                    <img src="imagenes/room17/img 5.jpg" alt="Obra 5" data-question="In an age of instant digital connection, can virtual movements achieve deeper, more permanent structural change than the physical marches of the past?">
+                    <div class="item-info">
+                        <h3>Scale Draft of the "Black Lives Matter" Street Mural</h3>
+
+                        <ul class="item-details">
+                            <li><strong>Date / Period:</strong> 2013 – Present (Movement Archive)</li>
+                            <li><strong>What is it?</strong> A digital rendering and design layout of the iconic yellow "Black Lives Matter" street mural painted across public spaces in the United States.</li>
+                            <li><strong>Historical Context:</strong> Co-founded in 2013 by three female organizers following George Zimmerman's acquittal in the Trayvon Martin killing, Black Lives Matter grew into a massive, decentralized social movement. Driven by grassroots energy and coordinated rapidly through digital and social media platforms, the movement erupted into what is described as the largest protest movement in American history.</li>
+                            <li><strong>Why is it important?</strong> This artifact represents a new era of 21st-century digital activism. It illustrates how modern movements bypass traditional centralized hierarchies to quickly shift public opinion, demand legal and judicial accountability, and successfully implement structural reforms—including policing and workplace anti-harassment policy overhauls across the country.</li>
+
+                        <a href="https://sydneypeacefoundation.org.au/10-things-know-black-lives-matter/" target="_blank" class="btn-video">Watch Video 🎥</a>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre del gallery-grid -->
+
+            <!-- Botones de navegación (Asegúrate de poner las rutas correctas aquí) -->
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room15')">⬅️ Previous Room</button>
+                <button class="btn-nav" onclick="navigateTo('room20')">Next Room ➡️</button>
+            </div>
+        </section>
+
+
+        <!-- Reflection Room -->
+        <section id="reflection" class="room-section">
+            <h2>Room 20. Reflection Hall</h2>
+            <p>Espacio para la reflexión final del museo virtual y la conclusión de la visita guiada. A continuación, puedes repasar y acceder a todas las actividades interactivas del recorrido:</p>
+            
+            <div class="all-activities" style="margin-bottom: 30px; text-align: left; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+                <h3>Museum Activities</h3>
+                <ul style="line-height: 1.8;">
+                    <li><strong>Room 1 & 2:</strong> <a href="https://www.tryinteract.com/share/quiz/6a9f3a95425f9367c8a931e7" target="_blank">Early & Colonial America Quiz</a></li>
+                    
+                    <li><strong>Room 3 & 4:</strong> 
+                        <ul>
+                            <li><a href="https://es.educaplay.com/recursos-educativos/30549109-road_to_independence_quiz.html" target="_blank">Road to Independence Quiz</a></li>
+                            <li><a href="https://es.educaplay.com/recursos-educativos/30549165-foundations_war_quiz.html" target="_blank">Foundations War Quiz</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Room 5:</strong> <a href="https://www.tryinteract.com/share/quiz/6a9f3e30425f9367c8a934c3" target="_blank">Forming a New National Government Quiz</a></li>
+                    
+                    <li><strong>Gallery 2 / Room 8 (The Civil War):</strong> 
+                        <ul>
+                            <li><a href="https://wordwall.net/es/resource/118508911?wwmethod=link&wwshareintent=student" target="_blank">Civil War Activity 1</a></li>
+                            <li><a href="https://wordwall.net/es/resource/118510112?wwmethod=link&wwshareintent=student" target="_blank">Civil War Activity 2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Gallery 2 / Room 9 (Reconstruction):</strong>
+                        <ul>
+                            <li><a href="https://share.gemini.google/OenGCyhn37Km" target="_blank">Reconstruction Story / Reading</a></li>
+                            <li><a href="https://es.educaplay.com/recursos-educativos/30484721-sharecropping_post_civil_war_quiz.html" target="_blank">Sharecropping Post Civil War Quiz</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Room 12:</strong> <a href="https://wordwall.net/resource/119331326?wwmethod=link&wwshareintent=student" target="_blank">Progressive Era Activity</a></li>
+                    
+                    <li><strong>Room 13:</strong> <a href="https://wordwall.net/resource/119332170?wwmethod=link&wwshareintent=student" target="_blank">America on the World Stage Activity</a></li>
+                    
+                    <li><strong>Room 14 (The New Deal and WWII):</strong>
+                        <ul>
+                            <li><a href="https://www.educaplay.com/learning-resources/30508558-new_deal_era_word_search.html" target="_blank">New Deal Era Word Search</a></li>
+                            <li><a href="https://www.educaplay.com/learning-resources/30508749-america_at_war_new_deal_to_wwii.html" target="_blank">Matching Pairs: New Deal to WWII</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Room 15 (The Cold War):</strong>
+                        <ul>
+                            <li><a href="https://www.educaplay.com/learning-resources/30508667-room_15_the_cold_war_quiz.html" target="_blank">The Cold War Quiz</a></li>
+                            <li><a href="https://www.educaplay.com/learning-resources/30508722-the_cold_war_quiz.html" target="_blank">The Cold War: Yes or No</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Room 16 (Civil Rights and Cultural Change):</strong>
+                        <ul>
+                            <li><a href="https://share.gemini.google/LuOZTYz0L9Bs" target="_blank">Story: The Journey for Justice</a></li>
+                            <li><a href="https://share.gemini.google/uaPx7qjKexXl" target="_blank">Civil Rights Quiz</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>Room 17 (Modern America):</strong>
+                        <ul>
+                            <li><a href="https://es.educaplay.com/recursos-educativos/30509149-room_17_modern_america_quiz.html" target="_blank">Modern America Quiz</a></li>
+                            <li><a href="https://es.educaplay.com/recursos-educativos/30509231-room17_modern_america_artifacts.html" target="_blank">Modern America Word Search</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="btn-nav" onclick="navigateTo('room17')">⬅️ Previous Room</button>
+                <div></div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+
+    </main>
+
+    <!-- Expanded Image Viewer (Modal) -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="Expanded artwork">
+            <div id="modal-question" class="question-hidden"></div>
+            <p class="click-hint">Click on the screen to continue...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
